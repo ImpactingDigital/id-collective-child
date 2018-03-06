@@ -1,0 +1,441 @@
+<head>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head> 
+
+<div class="multi-step-form">
+    <form data-smk-form id="regForm">
+    <input type="hidden" name="flag[smk_update_different_campaign]" value="1">
+    <div class="tab" id="tabstep1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-md-offset-2">
+                    <h1>EM QUE FASE SE<br> ENCONTRA</h1>
+                    <h6>CLIQUE NA FASE ONDE SE ENCONTRA</h6><br>
+                    <input type="radio" name="fase" onclick="plusSlides(1)" id="r1" value="first_stage"><label for="r1">01 Não faço negócio digital</label><br>
+                    <input type="radio" name="fase" onclick="plusSlides(2)" id="r2" value="second_stage"><label for="r2">02 Estou pouco satisfeito com o meu negócio digital</label><br>
+                    <input type="radio" name="fase" onclick="plusSlides(3)" id="r3" value="third_stage"><label for="r3">03 Quero testar um negócio digital</label><br>
+                    <input type="radio" name="fase" onclick="plusSlides(4)" id="r4" value="fourth_stage"><label for="r4">04 Quero dinamizar o meu negócio digital</label><br>
+                    <input type="radio" name="fase" onclick="plusSlides(5)" id="r5" value="fiveth_stage"><label for="r5">05 Quero uma plataforma digital</label><br>
+                </div>   
+            </div>
+        </div>
+    </div>
+    <div class="tab" id="tabstep2">
+        <div class="arrow-back"> back </div>
+        <div class="arrow-next"> next </div>
+        <div class="container">
+            <div class="row">
+                <div class="desafio">
+                    <div class="col-md-3 col-md-offset-2">
+                        <div class="text-center">
+                        <h1>DESAFIO DA EMPRESA</h1>
+                        <P>A empresa não tem propriedades digitais</P>
+                        <P>A empresa quer iniciar uma estratégia digital</P>
+                        <P>A empresa quer perceber o potencial do seu negócio</P>
+                        <P>Tempo recomendado</P>
+                        <P><b>12 meses</b></P>
+                        </div>
+                    </div>
+                </div>
+                <div class="propomos">
+                    <div class="col-md-3 col-md-offset-2">
+                        <div class="text-center">
+                        <h1>PROJETO QUE PROPOMOS</h1>
+                        <P><B>Fase Um</B></P>
+                        <P>Avaliação e workshop presencial</P>
+                        <P><B>Fase Dois</B></P>
+                        <P>Implementação / Configuração / Integração</P>
+                        <P><B>Fase Três</B></P>
+                        <P>Formação operacional</P>
+                        <P><B>Fase Quatro</B></P>
+                        <P>Relatórios / Análise / Otimização</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="form-buttons">
+                    <div class="text-center">
+                        <button type="button" onclick="plusSlides(-1)">Retornar</button>
+                        <button type="button" onclick="plusSlides(5); saveNum(5);">Avançar</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="tab" id="tabstep3">
+        <div class="container">
+            <div class="row">
+                <div class="desafio">
+                    <div class="col-md-3 col-md-offset-2">
+                        <div class="text-center">
+                            <h1>DESAFIO DA EMPRESA</h1>
+                            <P>A empresa pode ter propriedades digitais</P>
+                            <P>A empresa quer refazer uma estratégia digital</P>
+                            <P>A empresa quer obter melhores resultados de negócio</P>
+                            <P>Tempo recomendado</P>
+                            <P><b>9 meses</b></P>
+                        </div>
+                    </div>
+                </div>
+                <div class="propomos">
+                    <div class="col-md-3 col-md-offset-2">
+                        <div class="text-center">
+                        <h1>PROJETO QUE PROPOMOS</h1>
+                        <P><B>Fase Um</B></P>
+                        <P>Avaliação e workshop presencial</P>
+                        <P><B>Fase Dois</B></P>
+                        <P>Implementação / Configuração / Integração</P>
+                        <P><B>Fase Três</B></P>
+                        <P>Formação operacional</P>
+                        <P><B>Fase Quatro</B></P>
+                        <P>Relatórios / Análise / Otimização</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="form-buttons">
+                    <div class="text-center">
+                        <button type="button" onclick="plusSlides(-2)">Retornar</button>
+                        <button type="button" onclick="plusSlides(4); saveNum(4);">Avançar</button>
+                    </div>
+                </div>
+            </div>  
+    </div>
+    <div class="tab" id="tabstep4">
+        <div class="container">
+            <div class="row">
+                <div class="desafio">
+                    <div class="col-md-3 col-md-offset-2">
+                        <div class="text-center">
+                        <h1>DESAFIO DA EMPRESA</h1>
+                        <P>A empresa está a criar um novo negócio digital</P>
+                        <P> empresa quer testar o seu conceito em pouco tempo</P>
+                        <P>Tempo recomendado</P>
+                        <P><b>4 meses</b></P>
+                        </div>
+                    </div>
+                </div>
+                <div class="propomos">
+                    <div class="col-md-3 col-md-offset-2">
+                        <div class="text-center">
+                        <h1>PROJETO QUE PROPOMOS</h1>
+                        <P><B>Fase Um</B></P>
+                        <P>Avaliação e workshop presencial</P>
+                        <P><B>Fase Dois</B></P>
+                        <P>Implementação / Configuração / Integração</P>
+                        <P><B>Fase Três</B></P>
+                        <P>Experimentação e otimização</P>
+                        <P><B>Fase Quatro</B></P>
+                        <P>Relatórios / Análise</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="form-buttons">
+                    <div class="text-center">
+                        <button type="button" onclick="plusSlides(-3)">Retornar</button>
+                        <button type="button" onclick="plusSlides(3); saveNum(3);">Avançar</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="tab" id="tabstep5">
+        <div class="container">
+            <div class="row">
+                <div class="desafio">
+                    <div class="col-md-3 col-md-offset-2">
+                        <div class="text-center">
+                        <h1>DESAFIO DA EMPRESA</h1>
+                        <P>A empresa tem propriedades digitais</P>
+                        <P>A empresa quer dinamizar uma estratégia digital</P>
+                        <P>A empresa precisa encontrar um equilíbrio</P>
+                        <P>Tempo recomendado</P>
+                        <P><b>9 meses</b></P>
+                        </div>
+                    </div>
+                </div>
+                <div class="propomos">
+                    <div class="col-md-3 col-md-offset-2">
+                        <div class="text-center">
+                        <h1>PROJETO QUE PROPOMOS</h1>
+                        <P><B>Fase Um</B></P>
+                        <P>Avaliação e workshop presencial</P>
+                        <P><B>Fase Dois</B></P>
+                        <P>Configuração / Integração</P>
+                        <P><B>Fase Três</B></P>
+                        <P>Formação operacional</P>
+                        <P><B>Fase Quatro</B></P>
+                        <P>Relatórios / Análise / Otimização</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="form-buttons">
+                    <div class="text-center">
+                        <button type="button" onclick="plusSlides(-4)">Retornar</button>
+                        <button type="button" onclick="plusSlides(2); saveNum(2);">Avançar</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="tab" id="tabstep6">
+        <div class="container">
+            <div class="row">
+                <div class="desafio">
+                    <div class="col-md-3 col-md-offset-2">
+                        <div class="text-center">
+                        <h1>DESAFIO DA EMPRESA</h1>
+                        <P>A empresa quer desenvolver uma plataforma digital</P>
+                        <P>A empresa não sabe como desenvolver as funcionalidades da plataforma</P>
+                        <P>Tempo recomendado</P>
+                        <P><b>12 meses</b></P>
+                        </div>
+                    </div>
+                </div>
+                <div class="propomos">
+                    <div class="col-md-3 col-md-offset-2">
+                        <div class="text-center">
+                        <h1>PROJETO QUE PROPOMOS</h1>
+                        <P><B>Fase Um</B></P>
+                        <P>Avaliação e workshop presencial</P>
+                        <P><B>Fase Dois</B></P>
+                        <P>Documento funcional e técnico</P>
+                        <P><B>Fase Três</B></P>
+                        <P>Desenvolvimento</P>
+                        <P><B>Fase Quatro</B></P>
+                        <P>Análise e otimização</P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="form-buttons">
+                    <div class="text-center">
+                        <button type="button" onclick="plusSlides(-5)">Retornar</button>
+                        <button type="button" onclick="plusSlides(1); saveNum(1);">Avançar</button>
+                    </div>
+                </div>
+            </div>
+    </div>    
+    <div class="tab" id="tabstep7">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-md-offset-3">
+                            <input placeholder="Nome" type="text" name="lead[first_name]" id="fname">
+                        </div>         
+                        <div class="col-md-3">
+                            <input placeholder="Apelido" type="text" name="lead[second_name]" id="f2name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-md-offset-3">
+                            <input placeholder="Email" type="email" name="lead[email]" id="femail">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-md-offset-3">
+                            <input placeholder="Qual é a sua empresa?" type="text" name="extra[company]" id="fcompany" >
+                        </div>        
+                        <div class="col-md-3">
+                            <input placeholder="Qual é seu nº de telemóvel." type="text" name="lead[phone]" id="fphone" >
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-md-offset-3">
+                            <select class="custom-select" name="extra[contact_role]">
+                                <option value="" disabled selected>Qual é o seu cargo?</option>
+                                <option label="Administrator" value="Administrator">Administrador</option>
+                                <option label="Collaborator" value="Collaborator">Colaborador</option>
+                                <option label="Director" value="Director">Diretor</option>
+                                <option label="Manager" value="Manager">Gestor</option>
+                                <option label="C-Level" value="C-Level">Presidente</option>
+                                <option label="Freelancer" value="Freelancer">Trabalhador independente</option>
+                            </select>
+                        </div>         
+                        <div class="col-md-3">
+                            <select class="custom-select" name="extra[contact_role_area]">
+                                <option value="" disabled selected>Qual é a área de trabalho? </option>
+                                <option label="Administrativo" value="administrative">Administrativo</option>
+                                <option label="Comercial" value="commercial">Comercial</option>
+                                <option label="Comunicação" value="communications">Comunicação</option>
+                                <option label="Financeiro" value="finance">Financeiro</option>
+                                <option label="Geral / Executivo" value="executive"> Geral / Executivo</option>
+                                <option label="Jurídico" value="legal">Jurídico</option>
+                                <option label="Marketing" value="marketing">Marketing</option>
+                                <option label="Operações" value="operations">Operações</option>
+                                <option label="Outro" value="other">Outro</option>
+                                <option label="Produção" value="production">Produção</option>
+                                <option label="Recursos Humanos" value="human resources">Recursos Humanos</option>
+                                <option label="Tecnológico" value="technologic">Tecnológico</option>
+                            </select>
+                        </div>
+                    </div>
+                        <div class="form-buttons">
+                            <div class="text-center">
+                                <button type="button" onclick="backFinal(num)">Voltar</button>
+                                <button type="button" onclick="return validateForm()">Vamos lá</button>
+                            </div>
+                        </div>             
+                </div>
+        </div>
+    </form>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="steps-wizard">
+                    <span class="step"></span><span class="step"></span><span class="step"></span><span class="step"></span><span class="step"></span><span class="step"></span><span class="step"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+<!-- plugin wp-no-format to handle the && -->
+<!-- noformat on -->
+<!----------------------- MULTISTEP FORM JS START ----------------------->
+   
+<script type="text/javascript">
+
+var num = {};
+var slideIndex = 1; //first step (slideIndex) set to 1
+showSlides(slideIndex); // call function "showSlides" to display the first step
+
+
+  function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("tab");
+  var steps = document.getElementsByClassName("step");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  //for (i = 0; i < steps.length; i++) {
+   //   steps[i].className = steps[i].className.replace(" active", "");
+  if (i = 1) {
+      steps[i].className = steps[i].className.replace(" active", "");
+      }
+
+  
+  slides[slideIndex-1].style.display = "block";  
+  steps[slideIndex-1].className += " active";
+}
+
+function plusSlides(n) {
+    showSlides(slideIndex = slideIndex + n);
+}
+
+function backSlides(n) {
+    showSlides(slideIndex = slideIndex - n);
+}
+    
+function backFinal(n) {
+    showSlides(slideIndex = slideIndex - n);
+}
+    
+function saveNum(n) {
+    num = n;
+}
+
+
+//--------- Functions for validations ------------------------------------------------
+    
+    function validateForm() {
+    var fcompany = document.getElementById('fcompany').value;
+    var fname = document.getElementById('fname').value;
+    var f2name = document.getElementById('f2name').value;
+    var femail = document.getElementById('femail').value;
+        
+    if (fcompany != "" && fname != "" && f2name != "" && femail != "") {
+               
+        $("#regForm").submit(function(e) {
+            $.ajax({
+                type: "POST",
+                //url: "https://impactingdigital.smark.io/api.php/directlead/4566f85114854361469be1aff2e2db3d4a086561.json",
+                data: $("#regForm1").serialize(),  
+            });
+            e.preventDefault();
+        });
+    } 
+    else {
+        field();
+        return false; }
+    }
+    
+//--------- Function for fields -----------------------------------------------------
+    
+    function field() {
+    var i;
+    var fields = document.getElementsByTagName('INPUT');
+    for(var i=0; i < fields.length; i++) {     
+    if(fields[i].value == "") {    
+      fields[i].className += " invalid";
+        }
+    if(fields[i].value != "") {    
+      fields[i].className -= " invalid";
+        }
+      }
+    }
+    
+//--------- End functions ----------------------------------------------------------
+</script>    
+<!-- plugin wp-no-format to handle the && -->
+<!-- noformat off -->
+
+
+<style>
+
+    .multi-step-form{
+        font-family: montserrat;
+        height: 100%;
+        background-color: #b4b4b4;
+        color: white;
+        
+    }
+
+    input[type="radio"]{
+    display:none;
+    }
+    
+    label{
+        cursor: pointer;
+        transition: 500ms ease, 500ms ease;
+        -webkit-transition: 500ms ease, 500ms ease;
+    }
+    
+    label:hover{
+    color: rgba(255, 255, 255, 0.3);
+    
+    }
+    /*
+    .arrow-back{
+        position: relative;
+        height: 100%
+        left: 0;
+    }
+    
+    .arrow-next{
+        position: relative;
+        height: 100%;
+        right: 0;
+    }*/
+    .steps-wizard{
+        margin-top: 40px;
+        height: 7px;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 7px;
+    }
+    .step {
+    height: 7px;
+    width: 1%;
+    background-color: #fff;
+    border-radius: 7px;
+    display: inline-block;
+    opacity: 0;
+    }
+    .step.active {
+    opacity: 1;
+    }
+    
+</style>
