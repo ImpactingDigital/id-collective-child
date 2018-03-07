@@ -370,9 +370,6 @@ body, html{
 
 /* ---------------------------------- Multi Step Form  ----------------------------------  */
 
-.solucoes-negocio{
-
-}
 
 .text-titles-h2-form{
     font-family: Montserrat, Arial, sans-serif;
@@ -435,7 +432,7 @@ label:hover{
     }
 
 .steps-wizard{
-    margin-top: 70px;
+    margin-top: 40px;
     margin-bottom: 40px;
     height: 7px;
     width: 100%;
@@ -443,25 +440,131 @@ label:hover{
     border-radius: 7px;
 }
 
-.step {
+.step1 .steps-wizard{
     height: 7px;
     width: 1%;
     background-color: #fff;
     border-radius: 7px;
     display: inline-block;
-    opacity: 0;
-}
-.step.active {
     opacity: 1;
 }
+
+.step2 .steps-wizard{
+    height: 7px;
+    width: 50%;
+    background-color: #fff;
+    border-radius: 7px;
+    display: inline-block;
+    opacity: 1;
+}
+
+.step3 .steps-wizard{
+    height: 7px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 7px;
+    display: inline-block;
+    opacity: 1;
+}
+
 .form-buttons{
-    width: 133px;
-    height: 40px;
-    background-color: #4221DB;
+    margin-top: 40px;  
+}
+
+
+.form-buttons-green{
+    width: 150px;
+    margin: 5px 15px 5px 15px;
+    border: 0px;
+    padding: 5px 35px 5px 35px;
+    background-color: #00F277;
     color: #fff;
     font-size: 12px;
     font-weight: 500;
     font-family: Montserrat, Arial, sans-serif;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.4), 0 5px 15px rgba(0,0,0,0.4);
+    transition: 500ms ease, 500ms ease;
+    -webkit-transition: 500ms ease, 500ms ease;
 }
+
+.form-buttons-green:hover{
+    background-color: #00d368;
+}
+.form-buttons-green:focus{
+    outline-style: none;
+}
+
+.form-buttons-voltar{
+    width: 150px;
+    margin: 5px 15px 5px 15px;
+    padding: 5px 35px 5px 35px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: Montserrat, Arial, sans-serif;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.4), 0 5px 15px rgba(0,0,0,0.4);
+    transition: 500ms ease, 500ms ease;
+    -webkit-transition: 500ms ease, 500ms ease;
+}
+
+.form-buttons-voltar:hover{
+    border: 1px solid #00F277;
+}
+.form-buttons-voltar:focus{
+    outline-style: none;
+}
+
+.final-form{
+    color: white;
+}
+
+.final-form input{
+    font-family: Montserrat, Arial, sans-serif;
+    color: white;
+    width: 100%;
+    margin: 25px 0 25px 0;
+    padding: 10px 10px 10px 10px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid white;
+    transition: 500ms ease, 500ms ease;
+    -webkit-transition: 500ms ease, 500ms ease;
+
+}
+
+.final-form input:focus{
+    border-bottom: 1px solid #00F277;
+    
+}
+
+.final-form .selectpicker{
+    -webkit-appearance: none;
+    font-family: Montserrat, Arial, sans-serif;
+    width: 100%;
+    margin: 25px 0 25px 0;
+    padding: 10px 10px 10px 10px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 0px 0px 0px 0px;
+    transition: 500ms ease, 500ms ease;
+    -webkit-transition: 500ms ease, 500ms ease;    
+}
+
+.final-form .selectpicker:focus{
+   outline-style: none;
+   border: 1px solid #00F277;
+    
+}
+
+invalid{
+    background-color: red;
+}
+
+
+
+
 /* ---------------------------------- Multi Step Form  ----------------------------------  */
 
