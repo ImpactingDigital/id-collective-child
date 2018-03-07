@@ -1,0 +1,145 @@
+/*
+Theme Name: ID Collective Child
+Theme URI:  http://collective.stonedthemes.com/
+Description: A child theme of Collective Theme for Impacting Digital Website
+Author: ImpactingDigital
+Author URI: http://impacting.digital/
+Version: 1.0
+Template: collective
+*/
+
+@import url("../collective/style.css");
+
+
+
+/*---------- Custom ID buttons ----------*/
+.button.violet, .button.green{
+    color: #fff;
+    border: 0;
+    line-height: 2em;
+    font-size:.9em;
+    box-shadow:none;
+    transition:transform .2s ease, box-shadow .4s ease;
+}
+
+.button.violet {
+    background-color: #4222db;
+}
+.button.green {
+    background-color: #32ee8d;
+}
+.button.green:hover {
+    box-shadow:0 2px 4px -4px rgba(60, 180, 120, 0.4), 0 4px 10px rgba(60, 180, 120, 0.5);
+}
+.button.violet:hover {
+    box-shadow:0 2px 4px -4px rgba(66, 34, 219, 0.4), 0 4px 20px rgba(66, 34, 219, 0.4);
+}
+.button.violet:hover, .button.green:hover{
+    transform:scale(1.1);
+}
+.button.violet:active,
+.button.green:active{
+    transform:scale(.99);
+    box-shadow:0 0 0 rgba(0,0,0,0);
+    background-color:#3F3F4E;
+}
+/*---------- Image Text blocks ----------*/
+
+.block-image-text{
+    position:relative;
+    overflow:hidden;
+    min-height:400px;
+    text-align:center;
+    color:#fff;
+    padding:100px 20px;
+
+    
+}
+.block-image-text img{
+    position:absolute;
+    width:100%;
+    max-width:none;
+    z-index:-1;
+    left:0;
+    top:0;
+}
+
+@media screen and (min-width: 640px){
+    .block-image-text{
+        color:inherit;
+        padding: 0;
+        text-align:left;
+        overflow:initial;
+    }
+    .block-image-text::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .block-image-text .text-block{
+        padding:10px 0;
+        width:40%;
+        max-width:500px;
+        float:left;
+    }
+
+    .block-image-text img{
+        position:relative;
+        width:320px;
+        margin-top:20px;
+    }
+    .block-image-text.img-right{
+        padding-left:10%;
+    }
+    .block-image-text.img-right img{
+        float:right;
+        margin-left:10px;
+    }
+    .block-image-text.img-left img{
+        float:left;
+        margin-right:40px;
+    }
+    .block-image-text .text-block::after{
+        content:'';
+        display:block;
+        position:absolute;
+        background-color:#32ee8d;
+        top:0;
+        z-index:-2;
+        width:250px;
+        height:150px;
+    }
+    .block-image-text.img-right .text-block::after{
+        right:90px;
+        left:auto;
+    }
+    .block-image-text.img-left .text-block::after{
+        left:90px;
+        right:auto;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .block-image-text{
+        padding-top:40px;
+        padding-bottom:40px;
+    }
+    .block-image-text img{
+        width:500px;
+                margin-top:-20px;
+    }
+    .block-image-text.img-left img{
+        margin-right:100px;
+    }
+    .block-image-text .text-block{
+        padding:10% 0;
+    }
+    .block-image-text.img-right .text-block::after{
+        right:270px;
+        left:auto;
+    }
+    .block-image-text.img-left .text-block::after{
+        left:270px;
+        right:auto;
+    }
+}
