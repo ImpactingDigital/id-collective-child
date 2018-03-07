@@ -7,60 +7,166 @@ Author URI: http://impacting.digital/
 Version: 1.0
 Template: collective
 */
-/*@import url("../collective/style.css");*/
+
+@import url("../collective/style.css");
 
 /*general*/
 
-body { font-size: 18px;}
-p, span {line-height: 30px;}
-footer, div.wpcf7 label { font-size: 12px !important; }
+body {
+    font-size: 18px;
+}
+
+p,
+span {
+    line-height: 30px;
+}
+
+footer,
+div.wpcf7 label {
+    font-size: 12px !important;
+}
 
 
-div.wpcf7 input, div.wpcf7 select, div.wpcf7 label  { width: 100%; }
-div.wpcf7 input { width: 100%; border: 1px solid #ddd; padding: 7px 10px; font-weight: 600;  margin-top: 5px; border-radius: 5px;}
-div.wpcf7 label  { font-weight: 400; }
-div.wpcf7 select { margin-top: 5px; height: 40px; border: 1px solid #ddd; background: #fff; }
-input.wpcf7-submit { background: #32ee8d; border: none !important; float: right; color: #fff; text-transform: uppercase;   margin-top: 23px !important; }
-div.wpcf7 ul { padding: 0; display: block; float: left; margin-bottom: 70px;}
-div.wpcf7 ul li { display: block; float: left; width: calc(50% - 10px); margin-right: 10px; margin-bottom: 10px; }
-.wpcf7-response-output { display: block; float: left; }
+div.wpcf7 input,
+div.wpcf7 select,
+div.wpcf7 label {
+    width: 100%;
+}
 
-ul#menu-impacting-digital li ul.sub-menu { background-color: rgba(0, 0, 0, 0.8); border: none; width: 300px; margin-right: -150px; }
-ul#menu-impacting-digital li ul.sub-menu li a { color: #ffffff; text-transform: uppercase; font-weight:600; }
-ul#menu-impacting-digital li ul.sub-menu:after, ul#menu-impacting-digital li ul.sub-menu:before { display: none; }
+div.wpcf7 input {
+    width: 100%;
+    border: 1px solid #ddd;
+    padding: 7px 10px;
+    font-weight: 600;
+    margin-top: 5px;
+    border-radius: 5px;
+}
 
-.about-member-info p {font-size: 12px; line-height: 15px; min-height: 31px;}
+div.wpcf7 label {
+    font-weight: 400;
+}
 
-.blog-item .overlay-container .overlay .text h4 {font-size: 24px; font-weight: 500;}
-div.about-me-content { font-size: 15px; }
+div.wpcf7 select {
+    margin-top: 5px;
+    height: 40px;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+input.wpcf7-submit {
+    background: #32ee8d;
+    border: none !important;
+    float: right;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 23px !important;
+}
+
+div.wpcf7 ul {
+    padding: 0;
+    display: block;
+    float: left;
+    margin-bottom: 70px;
+}
+
+div.wpcf7 ul li {
+    display: block;
+    float: left;
+    width: calc(50% - 10px);
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.wpcf7-response-output {
+    display: block;
+    float: left;
+}
+
+ul#menu-impacting-digital li ul.sub-menu {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: none;
+    width: 300px;
+    margin-right: -150px;
+}
+
+ul#menu-impacting-digital li ul.sub-menu li a {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+ul#menu-impacting-digital li ul.sub-menu:after,
+ul#menu-impacting-digital li ul.sub-menu:before {
+    display: none;
+}
+
+.about-member-info p {
+    font-size: 12px;
+    line-height: 15px;
+    min-height: 31px;
+}
+
+.blog-item .overlay-container .overlay .text h4 {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+div.about-me-content {
+    font-size: 15px;
+}
 
 .vertical-project .overlay-container .overlay {
-  background-color: rgba(0, 0, 0, 0.50) !important;
+    background-color: rgba(0, 0, 0, 0.50) !important;
 }
 
 .vertical-project .overlay-container:hover .overlay {
-  background-color: rgba(0, 0, 0, 0.30) !important;
+    background-color: rgba(0, 0, 0, 0.30) !important;
 }
 
-.responsive-header { position: relative; }
-.responsive-logo.text-center { position: absolute; width: 45px; top: -18px; left: calc(50% - 22px); }
+.responsive-header {
+    position: relative;
+}
 
-.single-blog-content {color: #333333;}
+.responsive-logo.text-center {
+    position: absolute;
+    width: 45px;
+    top: -18px;
+    left: calc(50% - 22px);
+}
+
+.single-blog-content {
+    color: #333333;
+}
 
 @media (max-width: 1200px) {
-.blog-item .overlay-container .overlay .text h4 { font-size: 20px !important; }
+    .blog-item .overlay-container .overlay .text h4 {
+        font-size: 20px !important;
+    }
 }
 
 @media (max-width: 550px) {
-.blog-item .overlay-container .overlay .text h4 { font-size: 16px !important; }
-.h1, h1 { font-size: 26px; margin-top: 30px; margin-bottom: 30px;}
-body.single div.container div.row div.single-blog-details {display:none;}
+    .blog-item .overlay-container .overlay .text h4 {
+        font-size: 16px !important;
+    }
+    .h1,
+    h1 {
+        font-size: 26px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    body.single div.container div.row div.single-blog-details {
+        display: none;
+    }
 }
 
-.header-v1 .menu > li > a { padding-left: 10px; padding-right: 10px;}
+.header-v1 .menu > li > a {
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
 
 /* Content */
+
 .single-blog-content a {
     border-bottom: 4px solid #32ee8d;
     padding: 0 3px 0px;
@@ -72,24 +178,38 @@ body.single div.container div.row div.single-blog-details {display:none;}
     transition: all 0.3s ease-in;
 }
 
-.blog-item .overlay {background: rgba(0,0,0,0.30);}
-.blog-main-slider .overlay {background: rgba(0,0,0,0.30);}
-.blog-item .overlay-container .overlay .text h4 {font-size: 20px; font-weight:600;}
+.blog-item .overlay {
+    background: rgba(0, 0, 0, 0.30);
+}
+
+.blog-main-slider .overlay {
+    background: rgba(0, 0, 0, 0.30);
+}
+
+.blog-item .overlay-container .overlay .text h4 {
+    font-size: 20px;
+    font-weight: 600;
+}
 
 
 /* hide title description*/
+
 h6.margin-bottom-none.text-uppercase {
     display: none;
 }
 
 /* Hide loading */
-div#loading-container { display: none !important; }
+
+div#loading-container {
+    display: none !important;
+}
 
 
 /*cutom buttons */
-.button.violet{
-  background-color:rgba(66,34,219,1);
-  color:#fff;
-  border:0;
-  line-height:30px;
+
+.button.violet {
+    background-color: rgba(66, 34, 219, 1);
+    color: #fff;
+    border: 0;
+    line-height: 30px;
 }
