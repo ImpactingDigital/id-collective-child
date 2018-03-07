@@ -9,6 +9,13 @@ Template: collective
 */
 
 @import url("../collective/style.css");
+
+
+/*---------- Texts ----------*/
+a:hover{
+    color:#6BE899;
+}
+
 /*⁄---------- Ajustes no menu mobile ----------*/
 
 @media (max-width: 1024px){
