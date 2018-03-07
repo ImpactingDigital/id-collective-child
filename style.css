@@ -8,9 +8,26 @@ Version: 1.0
 Template: collective
 */
 
-@import url("../collective/style.css");
+/*@import url("../collective/style.css");*/
 
 
+/*---------- Texts ----------*/
+.main a:hover{
+    color:#6BE899;
+}
+
+/*⁄---------- Ajustes no menu mobile ----------*/
+
+@media (max-width: 1024px){
+    body header > div.responsive-header .responsive-menu ul.sub-menu {
+    display: block;
+    }
+}
+
+/*---------- Logo ----------*/
+.header-container .logo-container .logo img{
+    width:50px;
+}
 
 /*---------- Custom ID buttons ----------*/
 .button.violet, .button.green{
@@ -123,10 +140,12 @@ Template: collective
     .block-image-text{
         padding-top:40px;
         padding-bottom:40px;
+        max-width: 1280px;
+        margin:0 auto;
     }
     .block-image-text img{
         width:500px;
-                margin-top:-20px;
+        margin-top:-20px;
     }
     .block-image-text.img-left img{
         margin-right:100px;
