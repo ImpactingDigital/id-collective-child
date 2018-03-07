@@ -123,10 +123,12 @@ Template: collective
     .block-image-text{
         padding-top:40px;
         padding-bottom:40px;
+        max-width: 1280px;
+        margin:0 auto;
     }
     .block-image-text img{
         width:500px;
-                margin-top:-20px;
+        margin-top:-20px;
     }
     .block-image-text.img-left img{
         margin-right:100px;
