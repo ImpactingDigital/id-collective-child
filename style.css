@@ -67,28 +67,79 @@ Template: collective
 @media screen and (min-width: 640px){
     .block-image-text{
         color:inherit;
-        padding:100px 0;
+        padding: 0;
         text-align:left;
+        overflow:initial;
     }
+    .block-image-text::after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .block-image-text .text-block{
+        padding:10px 0;
+        width:40%;
+        max-width:500px;
+        float:left;
+    }
+
     .block-image-text img{
         position:relative;
         width:320px;
+        margin-top:20px;
     }
     .block-image-text.img-right{
-        padding-left:100px
+        padding-left:10%;
     }
     .block-image-text.img-right img{
         float:right;
-        margin-left:100px;
+        margin-left:10px;
     }
     .block-image-text.img-left img{
         float:left;
-        margin-right:100px;
+        margin-right:40px;
+    }
+    .block-image-text .text-block::after{
+        content:'';
+        display:block;
+        position:absolute;
+        background-color:#32ee8d;
+        top:0;
+        z-index:-2;
+        width:250px;
+        height:150px;
+    }
+    .block-image-text.img-right .text-block::after{
+        right:90px;
+        left:auto;
+    }
+    .block-image-text.img-left .text-block::after{
+        left:90px;
+        right:auto;
+    }
+}
 
+@media screen and (min-width: 1024px){
+    .block-image-text{
+        padding-top:40px;
+        padding-bottom:40px;
     }
     .block-image-text img{
-        position:relative;
-        width:320px;
-        float:left;
+        width:500px;
+                margin-top:-20px;
+    }
+    .block-image-text.img-left img{
+        margin-right:100px;
+    }
+    .block-image-text .text-block{
+        padding:10% 0;
+    }
+    .block-image-text.img-right .text-block::after{
+        right:270px;
+        left:auto;
+    }
+    .block-image-text.img-left .text-block::after{
+        left:270px;
+        right:auto;
     }
 }
