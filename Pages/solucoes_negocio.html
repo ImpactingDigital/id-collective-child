@@ -14,7 +14,7 @@
     <div class="multi-step-form">
     <form data-smk-form id="regForm">
     <input type="hidden" name="flag[smk_update_different_campaign]" value="1">
-    <div class="tab" id="tabstep1">
+    <div class="tab tab1" id="tabstep1">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-offset-2">
@@ -29,7 +29,7 @@
             </div>
         </div>
     </div>
-    <div class="tab" id="tabstep2">
+    <div class="tab tab2" id="tabstep2">
         <div class="container">
             <div class="row">
                 <div class="desafio">
@@ -70,7 +70,7 @@
                 </div>
             </div>
     </div>
-    <div class="tab" id="tabstep3">
+    <div class="tab tab2" id="tabstep3">
         <div class="container">
             <div class="row">
                 <div class="desafio">
@@ -111,7 +111,7 @@
                 </div>
             </div>  
     </div>
-    <div class="tab" id="tabstep4">
+    <div class="tab tab2" id="tabstep4">
         <div class="container">
             <div class="row">
                 <div class="desafio">
@@ -151,7 +151,7 @@
                 </div>
             </div>
     </div>
-    <div class="tab" id="tabstep5">
+    <div class="tab tab5" id="tabstep5">
         <div class="container">
             <div class="row">
                 <div class="desafio">
@@ -192,7 +192,7 @@
                 </div>
             </div>
     </div>
-    <div class="tab" id="tabstep6">
+    <div class="tab tab2" id="tabstep6">
         <div class="container">
             <div class="row">
                 <div class="desafio">
@@ -232,7 +232,7 @@
                 </div>
             </div>
     </div>    
-    <div class="tab" id="tabstep7">
+    <div class="tab tab3" id="tabstep7">
                 <div class="container">
                     <div class="final-form">
                         <h2 class="text-center text-titles-h2-form">DEIXE-NOS OS<br> SEUS DADOS</h2>
@@ -319,7 +319,6 @@
 var num = {};
 var slideIndex = 1; //first step (slideIndex) set to 1
 showSlides(slideIndex); // call function "showSlides" to display the first step
-stepWizard(slideIndex);
 
     function showSlides(n) {
     var i;
@@ -327,10 +326,10 @@ stepWizard(slideIndex);
     if (n > slides.length) {slideIndex = 1} 
     if (n < 1) {slideIndex = slides.length}
     for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-    } 
+        slides[i].style.display = "none";
+    }
     slides[slideIndex-1].style.display = "block";
-    console.log(slideIndex);
+    //stepWizard();
     }
     
     function plusSlides(n) {
@@ -348,13 +347,21 @@ stepWizard(slideIndex);
     function saveNum(n) {
     num = n;
     }
+    
+    /*
+    function stepWizard(){
+        var step = document.getElementsByTagName("FORM");
+
+    if (slideIndex == 1){
+        step[slideIndex-1].className += "step1";
+
         
-    function stepWizard(n) {
-    var step = document.getElementById('regForm');    
-    if (slideIndex == 7){
-    step[slideIndex-1].className += "step1";    
     }
+
+    console.log(slideIndex);
     }
+    */
+        
 
 //--------- Functions for validations ------------------------------------------------
     
