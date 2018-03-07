@@ -18,7 +18,7 @@ Template: collective
 }
 
 /*---------- Logo ----------*/
-.header-container .logo-container logo img{
+.header-container .logo-container .logo img{
     width:45px;
 }
 
