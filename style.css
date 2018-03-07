@@ -9,7 +9,12 @@ Template: collective
 */
 
 @import url("../collective/style.css");
+/*⁄---------- Ajustes no menu mobile ----------*/
 
+@media (max-width: 1024px){
+    body header > div.responsive-header .responsive-menu ul.sub-menu {
+    display: block;
+}
 
 
 /*---------- Custom ID buttons ----------*/
