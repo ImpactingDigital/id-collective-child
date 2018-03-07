@@ -14,6 +14,7 @@ Template: collective
 @media (max-width: 1024px){
     body header > div.responsive-header .responsive-menu ul.sub-menu {
     display: block;
+    }
 }
 
 
