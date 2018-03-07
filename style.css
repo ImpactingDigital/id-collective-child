@@ -17,6 +17,10 @@ Template: collective
     }
 }
 
+/*---------- Logo ----------*/
+.header-container .logo-container logo img{
+    width:45px;
+}
 
 /*---------- Custom ID buttons ----------*/
 .button.violet, .button.green{
