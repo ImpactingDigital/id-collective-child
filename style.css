@@ -7,14 +7,7 @@ Author URI: http://impacting.digital/
 Version: 1.0
 Template: collective
 */
-
-/*@import url("../collective/style.css");*/
-
-
-/*---------- Texts ----------*/
-.main a:hover{
-    color:#6BE899;
-}
+@import url("../collective/style.css");
 
 /*⁄---------- Ajustes no menu mobile ----------*/
 
@@ -22,6 +15,11 @@ Template: collective
     body header > div.responsive-header .responsive-menu ul.sub-menu {
     display: block;
     }
+}
+
+/*---------- Texts ----------*/
+.main a:hover{
+    color:#6BE899;
 }
 
 /*---------- Logo ----------*/
