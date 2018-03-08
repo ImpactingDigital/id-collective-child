@@ -25,8 +25,9 @@
                     <input type="radio" name="fase" onclick="plusSlides(3)" id="r3" value="third_stage"><label for="r3"><div class="inline-tab1 text-form">03&nbsp;&nbsp;</div><div class="inline-tab1 text-form">Quero testar um negócio digital</div></label><br>
                     <input type="radio" name="fase" onclick="plusSlides(4)" id="r4" value="fourth_stage"><label for="r4"><div class="inline-tab1 text-form">04&nbsp;&nbsp;<br>&nbsp;&nbsp;</div><div class="inline-tab1 text-form">Quero dinamizar o meu negócio <br>digital</div></label><br>
                     <input type="radio" name="fase" onclick="plusSlides(5)" id="r5" value="fiveth_stage"><label for="r5"><div class="inline-tab1 text-form">05&nbsp;&nbsp;</div><div class="inline-tab1 text-form">Quero uma plataforma digital</div></label><br>
-                </div>   
+                </div>
             </div>
+            <div class="col-md-12"><div class="steps-wizard"><div class="step1"></div></div></div>
         </div>
     </div>
     <div class="tab tab2" id="tabstep2">
@@ -68,6 +69,7 @@
                         <button class="form-buttons-green" type="button" onclick="plusSlides(5); saveNum(5);">Avançar</button>
                     </div>
                 </div>
+                <div class="col-md-12"><div class="steps-wizard"><div class="step2"></div></div></div>
             </div>
     </div>
     <div class="tab tab2" id="tabstep3">
@@ -109,6 +111,7 @@
                         <button class="form-buttons-green" type="button" onclick="plusSlides(4); saveNum(4);">Avançar</button>
                     </div>
                 </div>
+                <div class="col-md-12"><div class="steps-wizard"><div class="step2"></div></div></div>
             </div>  
     </div>
     <div class="tab tab2" id="tabstep4">
@@ -149,9 +152,10 @@
                         <button class="form-buttons-green" type="button" onclick="plusSlides(3); saveNum(3);">Avançar</button>
                     </div>
                 </div>
+            <div class="col-md-12"><div class="steps-wizard"><div class="step2"></div></div></div>
             </div>
     </div>
-    <div class="tab tab5" id="tabstep5">
+    <div class="tab tab2" id="tabstep5">
         <div class="container">
             <div class="row">
                 <div class="desafio">
@@ -190,6 +194,7 @@
                         <button class="form-buttons-green" type="button" onclick="plusSlides(2); saveNum(2);">Avançar</button>
                     </div>
                 </div>
+            <div class="col-md-12"><div class="steps-wizard"><div class="step2"></div></div></div>
             </div>
     </div>
     <div class="tab tab2" id="tabstep6">
@@ -230,6 +235,7 @@
                         <button class="form-buttons-green" type="button" onclick="plusSlides(1); saveNum(1);">Avançar</button>
                     </div>
                 </div>
+            <div class="col-md-12"><div class="steps-wizard"><div class="step2"></div></div></div>
             </div>
     </div>    
     <div class="tab tab3" id="tabstep7">
@@ -293,23 +299,22 @@
                                 <button class="form-buttons-voltar" type="button" onclick="backFinal(num)">Voltar</button>
                                 <button class="form-buttons-green" type="button" onclick="return validateForm()">Vamos lá</button>
                             </div>
-                        </div>             
+                        </div>
+                    <div class="col-md-12"><div class="steps-wizard"><div class="step3"></div></div></div>
                 </div>
-            
         </div>
     </form>
-    <div class="container">
+    <!--<div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="steps-wizard">
-                    <span class="step"></span><span class="step"></span><span class="step"></span><span class="step"></span><span class="step"></span><span class="step"></span><span class="step"></span>
-                </div>
+                <div class="steps-wizard"></div>
             </div>
         </div>
-    </div>
+    </div>-->
         </div>
         </div>
     </body>
+    
 <!-- plugin wp-no-format to handle the && -->
 <!-- noformat on -->
 <!----------------------- MULTISTEP FORM JS START ----------------------->
@@ -320,6 +325,7 @@ var num = {};
 var slideIndex = 1; //first step (slideIndex) set to 1
 showSlides(slideIndex); // call function "showSlides" to display the first step
 
+    
     function showSlides(n) {
     var i;
     var slides = document.getElementsByClassName("tab");
@@ -329,7 +335,6 @@ showSlides(slideIndex); // call function "showSlides" to display the first step
         slides[i].style.display = "none";
     }
     slides[slideIndex-1].style.display = "block";
-    //stepWizard();
     }
     
     function plusSlides(n) {
@@ -349,18 +354,24 @@ showSlides(slideIndex); // call function "showSlides" to display the first step
     }
     
     /*
-    function stepWizard(){
-        var step = document.getElementsByTagName("FORM");
+    function stepWizard(slideIndex){
+    var step = document.getElementsByTagName("FORM");
 
     if (slideIndex == 1){
-        step[slideIndex-1].className += "step1";
-
-        
+        step[slideIndex-1].className += "step1";   
     }
-
-    console.log(slideIndex);
+    }
+    
+    function stepWizard() {
+    var tab1 = document.getElementsByClassName("tab").style.display == "block";
+    var step = document.getElementsByTagName("FORM");    
+        
+    if (tab1) {
+        step.className += "step1";
+    }
     }
     */
+    
         
 
 //--------- Functions for validations ------------------------------------------------
