@@ -160,3 +160,10 @@ Template: collective
         right:auto;
     }
 }
+
+.menu-footer{
+    list-style: none;
+}
+.menu-footer li{
+    padding:15px 0;
+}
