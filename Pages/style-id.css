@@ -21,6 +21,7 @@ body, html{
     height: 27px;
     top: 50%;
     left: 50%;
+    z-index: 0;
     transform: translate(-50%,-50%);
 }
 /* Hero-Image End */
@@ -148,16 +149,13 @@ body, html{
     background-size: cover;
 }
 .solucoes-negocio{
-   
+    
     background: linear-gradient(rgba(0,0,0, .7), rgba(0,0,0, .7)),
                 url("fotos/solucoes-negocio/hero-image-solucoes-negocio-lg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100%;
-    padding-top: 70px;
-    padding-bottom: 70px;
-    
+    background color: 
 }
 
 /* Hero-Image-Pages End */
@@ -370,6 +368,10 @@ body, html{
 
 /* ---------------------------------- Multi Step Form  ----------------------------------  */
 
+.multi-step-form{
+    height: 100vh;
+    position: relative;
+}
 
 .text-titles-h2-form{
     font-family: Montserrat, Arial, sans-serif;
@@ -405,18 +407,18 @@ body, html{
     color: white;
 }
 
-input[type="radio"]{
+.multi-step-form input[type="radio"]{
     display:none;
 }
     
-label{
+.multi-step-form label{
     color: rgba(255, 255, 255, 0.6);
     cursor: pointer;
     transition: 500ms ease, 500ms ease;
     -webkit-transition: 500ms ease, 500ms ease;        
 }
     
-label:hover{
+.multi-step-form label:hover{
     color: rgba(255, 255, 255, 1);
 }
     .arrow-back{
@@ -431,43 +433,117 @@ label:hover{
         right: 0;
     }
 
+    .multi-step-form .tab-bar{
+    padding-bottom: 80px;
+    height: calc(100vh - 40px);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+    
+}
+
+.multi-step-form .tab{
+    height:100vh;
+}
+.multi-step-form .step-bar{
+    position: absolute;
+    bottom: 0;   
+    height: 40px;
+    width:70%;
+    left:15%;
+    z-index: 10;
+}
 .steps-wizard {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    height: 7px;
+    height: 3px;
     width: 100%;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 7px;
 }
+.current-step.s1 {
+    color: white;
+}
+.current-step.s2 {
+    color: white;
+}
+.current-step.s3 {
+    color: white;
+}
+.current-step.s4 {
+    color: white;
+}
+.s1{
+
+    font-family: Montserrat, Arial, sans-serif;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left; 
+}
+.s2{
+
+    font-family: Montserrat, Arial, sans-serif;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center; 
+}
+
+.s3{
+
+    font-family: Montserrat, Arial, sans-serif;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center; 
+}
+.s4{
+
+    font-family: Montserrat, Arial, sans-serif;
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 18px;
+    font-weight: 500;
+    text-align: right; 
+}
 
 .step1 {
-    height: 7px;
-    width: 1%;
+    height: 3px;
+    width: 2%;
     background-color: #fff;
-    border-radius: 7px;
+    border-radius: 3px;
     opacity: 1;
 }
 .step2 {
-    height: 7px;
-    width: 50%;
+    height: 3px;
+    width: 33%;
     background-color: #fff;
-    border-radius: 7px;
+    border-radius: 3px;
     opacity: 1;
 }
 .step3 {
-    height: 7px;
-    width: 100%;
+    height: 3px;
+    width: 67%;
     background-color: #fff;
-    border-radius: 7px;
+    border-radius: 3px;
     opacity: 1;
 }
+.step4 {
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 3px;
+    opacity: 1;
+}   
+/*
+@media screen and (max-width:250px) {
+    
+}
+*/
 
 
 
 .form-buttons{
     margin-top: 40px;  
 }
-
 
 .form-buttons-green{
     width: 150px;
@@ -534,7 +610,6 @@ label:hover{
 
 .final-form input:focus{
     border-bottom: 1px solid #00F277;
-    
 }
 
 .final-form .selectpicker{
@@ -553,15 +628,11 @@ label:hover{
 .final-form .selectpicker:focus{
    outline-style: none;
    border: 1px solid #00F277;
-    
 }
 
-invalid{
-    background-color: red;
+input.invalid{
+    border-bottom: 1px solid #f25d00;
 }
-
-
-
 
 /* ---------------------------------- Multi Step Form  ----------------------------------  */
 
