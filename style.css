@@ -79,10 +79,11 @@ Template: collective
 }
 .block-image-text img{
     position:absolute;
-    width:100%;
+    width:auto;
+    height:100%;
     max-width:none;
     z-index:-1;
-    left:0;
+    right:0;
     top:0;
 }
 
@@ -172,7 +173,3 @@ Template: collective
     padding:15px 0;
 }
 
-/*---------- Ajustes Homepage ----------*/
-.home #blog-items .col-md-4:last-child{
-    display:none;
-}
