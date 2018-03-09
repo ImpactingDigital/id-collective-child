@@ -24,6 +24,8 @@ Template: collective
 .destaque-texto{
     background-color: #6be899;
     color: #fff;
+    padding-left:20px;
+    padding-right:20px;
 }
 
 /*---------- Logo ----------*/
