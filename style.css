@@ -21,6 +21,10 @@ Template: collective
 .main a:hover{
     color:#6BE899;
 }
+.destaque-texto{
+    background-color: #6be899;
+    color: #fff;
+}
 
 /*---------- Logo ----------*/
 .header-container .logo-container .logo img{
@@ -49,7 +53,8 @@ Template: collective
 .button.violet:hover {
     box-shadow:0 2px 4px -4px rgba(66, 34, 219, 0.4), 0 4px 20px rgba(66, 34, 219, 0.4);
 }
-.button.violet:hover, .button.green:hover{
+.button.violet:hover,
+.button.green:hover{
     transform:scale(1.1);
 }
 .button.violet:active,
@@ -67,8 +72,6 @@ Template: collective
     text-align:center;
     color:#fff;
     padding:100px 20px;
-
-    
 }
 .block-image-text img{
     position:absolute;
