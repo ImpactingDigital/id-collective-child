@@ -171,3 +171,8 @@ Template: collective
 .menu-footer li{
     padding:15px 0;
 }
+
+/*---------- Ajustes Homepage ----------*/
+.home #blog-items .col-md-4:last-child{
+    display:none;
+}
