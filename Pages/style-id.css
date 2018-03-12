@@ -149,18 +149,17 @@ body, html{
     background-size: cover;
 }
 .solucoes-negocio{
-    
-    background: linear-gradient(rgba(0,0,0, .7), rgba(0,0,0, .7)),
-                url("/wp-content/uploads/2016/11/hero-image-solucoes-negocio-mb.jpg");
+    background: linear-gradient(rgba(0,0,0, .7), rgba(0,0,0, .7)), url("/wp-content/uploads/2016/11/hero-image-solucoes-negocio-mb.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
-@media screen and (max-width:640px){
+@media screen and (min-width:640px){
     .solucoes-negocio{
-        background: linear-gradient(rgba(0,0,0, .7), rgba(0,0,0, .7)),
-                    url("/wp-content/uploads/2016/11/hero-image-solucoes-negocio-lg.jpg");
+        background: linear-gradient(rgba(0,0,0, .7), rgba(0,0,0, .7)), url("/wp-content/uploads/2016/11/hero-image-solucoes-negocio-lg.jpg");
+            background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     }
 }
 /* Hero-Image-Pages End */
@@ -374,7 +373,7 @@ body, html{
 /* ---------------------------------- Multi Step Form  ----------------------------------  */
 
 .multi-step-form{
-    height: 100vh;
+/*    height: 100vh;*/
     position: relative;
 }
 
@@ -408,7 +407,8 @@ body, html{
     font-weight: 500;
 }
 
-.text-form-white{
+.text-form-white,
+.text-form-white p{
     color: white;
 }
 
@@ -426,36 +426,41 @@ body, html{
 .multi-step-form label:hover{
     color: rgba(255, 255, 255, 1);
 }
-    .arrow-back{
+.arrow-back{
 
-        height: 100%
-        left: 0;
-    }
-    
-    .arrow-next{
+    height: 100%
+    left: 0;
+}
 
-        height: 100%;
-        right: 0;
-    }
+.arrow-next{
 
-    .multi-step-form .tab-bar{
+    height: 100%;
+    right: 0;
+}
+
+.multi-step-form .tab-bar{
+    padding-top: 80px;
     padding-bottom: 80px;
+    /*
     height: calc(100vh - 40px);
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     overflow-scrolling: touch;
+*/
     
 }
 
 .multi-step-form .tab{
-    height:100vh;
+/*    height:100vh;*/
 }
 .multi-step-form .step-bar{
+/*
     position: absolute;
     bottom: 0;   
+*/
     height: 40px;
     width:70%;
-    left:15%;
+    margin-left:15%;
     z-index: 10;
 }
 .steps-wizard {
