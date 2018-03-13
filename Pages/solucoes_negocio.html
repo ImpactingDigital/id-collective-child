@@ -1,472 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <title>Soluções de Negócio</title>
-    <link href="style-id.css" rel="stylesheet" type="text/css">
-    <link href="css/bootstrap.css" rel="stylesheet" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
+    <head>
+        <title>Soluções de Negócio</title>
+        <link href="style-id.css" rel="stylesheet" type="text/css">
+        <link href="../style.css" rel="stylesheet" type="text/css">
+        <link href="../custom-style.css" rel="stylesheet" type="text/css">
+        <link href="css/bootstrap.css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
 
-<body>
-    <div class="solucoes-negocio">
-        <div class="multi-step-form">
-            <form data-smk-form id="regForm">
-                <input type="hidden" name="flag[smk_update_different_campaign]" value="1">
-                <div class="tab " id="tabstep1">
-                    <div class="container">
-                        <div class="tab-bar">
-                            <div class="row">
-                                <div class="col-lg-3 col-md-offset-2">
-                                    <h2 class="text-titles-h2-form">EM QUE FASE<br> SE ENCONTRA</h2>
-                                    <div class="text-subtitle-form text-form">CLIQUE NA FASE ONDE SE ENCONTRA</div><br>
-                                    <input type="radio" name="fase" onclick="plusSlides(1)" id="r1" value="first_stage"><label for="r1"><div class="inline-tab1 text-form">01&nbsp;&nbsp;</div><div class="inline-tab1 text-form">Não faço negócio digital</div></label><br>
-                                    <input type="radio" name="fase" onclick="plusSlides(2)" id="r2" value="second_stage"><label for="r2"><div class="inline-tab1 text-form">02&nbsp;&nbsp;<br>&nbsp;&nbsp;</div><div class="inline-tab1 text-form">Estou pouco satisfeito com o <br>meu negócio digital</div></label><br>
-                                    <input type="radio" name="fase" onclick="plusSlides(3)" id="r3" value="third_stage"><label for="r3"><div class="inline-tab1 text-form">03&nbsp;&nbsp;</div><div class="inline-tab1 text-form">Quero testar um negócio digital</div></label><br>
-                                    <input type="radio" name="fase" onclick="plusSlides(4)" id="r4" value="fourth_stage"><label for="r4"><div class="inline-tab1 text-form">04&nbsp;&nbsp;<br>&nbsp;&nbsp;</div><div class="inline-tab1 text-form">Quero dinamizar o meu negócio <br>digital</div></label><br>
-                                    <input type="radio" name="fase" onclick="plusSlides(5)" id="r5" value="fiveth_stage"><label for="r5"><div class="inline-tab1 text-form">05&nbsp;&nbsp;</div><div class="inline-tab1 text-form">Quero uma plataforma digital</div></label><br>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="step-bar">
-                            <div class="s1 current-step col-xs-2">01</div>
-                            <div class="s2 col-xs-4">02</div>
-                            <div class="s3 col-xs-4">03</div>
-                            <div class="s4 col-xs-2">04</div>
-                            <div class="col-xs-12">
-                                <div class="steps-wizard">
-                                    <div class="step1"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab " id="tabstep2">
-                    <div class="container">
-                        <div class="tab-bar">
-                            <div class="row">
-                                <div class="desafio">
-                                    <div class="col-md-3 col-md-offset-2">
-                                        <div class="text-center">
-                                            <h2 class="text-titles-h2-form">DESAFIO DA EMPRESA</h2>
-                                            <div class="text-form-white text-form">
-                                                <P class="text-form">A empresa não tem propriedades digitais</P>
-                                                <P class="text-form">A empresa quer iniciar uma estratégia digital</P>
-                                                <P class="text-form">A empresa quer perceber o potencial do seu negócio</P>
-                                                <P class="text-form">Tempo recomendado:</P>
-                                            </div>
-                                            <P class="text-form-green">12 meses</P>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="propomos">
-                                    <div class="col-md-3 col-md-offset-2">
-                                        <div class="text-center">
-                                            <h2 class="text-titles-h2-form">PROJETO QUE PROPOMOS</h2>
-                                            <P class="text-form-green">Fase Um</P>
-                                            <P class="text-form-white text-form">Avaliação e workshop presencial</P>
-                                            <P class="text-form-green">Fase Dois</P>
-                                            <P class="text-form-white text-form">Implementação / Configuração / Integração</P>
-                                            <P class="text-form-green">Fase Três</P>
-                                            <P class="text-form-white text-form">Formação operacional</P>
-                                            <P class="text-form-green">Fase Quatro</P>
-                                            <P class="text-form-white text-form">Relatórios / Análise / Otimização</P>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-buttons">
-                                <div class="text-center">
-                                    <button class="form-buttons-voltar" type="button" onclick="plusSlides(-1)">Voltar</button>
-                                    <button class="form-buttons-green" type="button" onclick="plusSlides(5); saveNum(5);">Avançar</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="step-bar">
-                            <div class="s1 col-xs-2">01</div>
-                            <div class="s2 current-step col-xs-4">02</div>
-                            <div class="s3 col-xs-4">03</div>
-                            <div class="s4 col-xs-2">04</div>
-                            <div class="col-xs-12">
-                                <div class="steps-wizard">
-                                    <div class="step2"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab " id="tabstep3">
-                    <div class="container">
-                        <div class="tab-bar">
-                            <div class="row">
-                                <div class="desafio">
-                                    <div class="col-md-3 col-md-offset-2">
-                                        <div class="text-center">
-                                            <h2 class="text-titles-h2-form">DESAFIO DA EMPRESA</h2>
-                                            <div class="text-form-white text-form">
-                                                <P class="text-form">A empresa pode ter propriedades digitais</P>
-                                                <P class="text-form">A empresa quer refazer uma estratégia digital</P>
-                                                <P class="text-form">A empresa quer obter melhores resultados de negócio</P>
-                                                <P class="text-form">Tempo recomendado:</P>
-                                            </div>
-                                            <P class="text-form-green">9 meses</P>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="propomos">
-                                    <div class="col-md-3 col-md-offset-2">
-                                        <div class="text-center">
-                                            <h2 class="text-titles-h2-form">PROJETO QUE PROPOMOS</h2>
-                                            <P class="text-form-green">Fase Um</P>
-                                            <P class="text-form-white text-form">Avaliação e workshop presencial</P>
-                                            <P class="text-form-green">Fase Dois</P>
-                                            <P class="text-form-white text-form">Implementação / Configuração / Integração</P>
-                                            <P class="text-form-green">Fase Três</P>
-                                            <P class="text-form-white text-form">Formação operacional</P>
-                                            <P class="text-form-green">Fase Quatro</P>
-                                            <P class="text-form-white text-form">Relatórios / Análise / Otimização</P>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-buttons">
-                                <div class="text-center">
-                                    <button class="form-buttons-voltar" type="button" onclick="plusSlides(-2)">Voltar</button>
-                                    <button class="form-buttons-green" type="button" onclick="plusSlides(4); saveNum(4);">Avançar</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="step-bar">
-                            <div class="s1 col-xs-2">01</div>
-                            <div class="s2 current-step col-xs-4">02</div>
-                            <div class="s3 col-xs-4">03</div>
-                            <div class="s4 col-xs-2">04</div>
-                            <div class="col-xs-12">
-                                <div class="steps-wizard">
-                                    <div class="step2"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab " id="tabstep4">
-                    <div class="container">
-                        <div class="tab-bar">
-                            <div class="row">
-                                <div class="desafio">
-                                    <div class="col-md-3 col-md-offset-2">
-                                        <div class="text-center">
-                                            <h2 class="text-titles-h2-form">DESAFIO DA EMPRESA</h2>
-                                            <div class="text-form-white text-form">
-                                                <P class="text-form">A empresa está a criar um novo negócio digital</P>
-                                                <P class="text-form"> empresa quer testar o seu conceito em pouco tempo</P>
-                                                <P class="text-form">Tempo recomendado:</P>
-                                            </div>
-                                            <P class="text-form-green">4 meses</P>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="propomos">
-                                    <div class="col-md-3 col-md-offset-2">
-                                        <div class="text-center">
-                                            <h2 class="text-titles-h2-form">PROJETO QUE PROPOMOS</h2>
-                                            <P class="text-form-green">Fase Um</P>
-                                            <P class="text-form-white text-form">Avaliação e workshop presencial</P>
-                                            <P class="text-form-green">Fase Dois</P>
-                                            <P class="text-form-white text-form">Implementação / Configuração / Integração</P>
-                                            <P class="text-form-green">Fase Três</P>
-                                            <P class="text-form-white text-form">Experimentação e otimização</P>
-                                            <P class="text-form-green">Fase Quatro</P>
-                                            <P class="text-form-white text-form">Relatórios / Análise</P>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-buttons">
-                                <div class="text-center">
-                                    <button class="form-buttons-voltar" type="button" onclick="plusSlides(-3)">Voltar</button>
-                                    <button class="form-buttons-green" type="button" onclick="plusSlides(3); saveNum(3);">Avançar</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="step-bar">
-                            <div class="s1 col-xs-2">01</div>
-                            <div class="s2 current-step col-xs-4">02</div>
-                            <div class="s3 col-xs-4">03</div>
-                            <div class="s4 col-xs-2">04</div>
-                            <div class="col-xs-12">
-                                <div class="steps-wizard">
-                                    <div class="step2"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab " id="tabstep5">
-                    <div class="container">
-                        <div class="tab-bar">
-                            <div class="row">
-                                <div class="desafio">
-                                    <div class="col-md-3 col-md-offset-2">
-                                        <div class="text-center">
-                                            <h2 class="text-titles-h2-form">DESAFIO DA EMPRESA</h2>
-                                            <div class="text-form-white text-form">
-                                                <P class="text-form">A empresa tem propriedades digitais</P>
-                                                <P class="text-form">A empresa quer dinamizar uma estratégia digital</P>
-                                                <P class="text-form">A empresa precisa encontrar um equilíbrio</P>
-                                                <P class="text-form">Tempo recomendado:</P>
-                                            </div>
-                                            <P class="text-form-green">9 meses</P>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="propomos">
-                                    <div class="col-md-3 col-md-offset-2">
-                                        <div class="text-center">
-                                            <h2 class="text-titles-h2-form">PROJETO QUE PROPOMOS</h2>
-                                            <P class="text-form-green">Fase Um</P>
-                                            <P class="text-form-white text-form">Avaliação e workshop presencial</P>
-                                            <P class="text-form-green">Fase Dois</P>
-                                            <P class="text-form-white text-form">Configuração / Integração</P>
-                                            <P class="text-form-green">Fase Três</P>
-                                            <P class="text-form-white text-form">Formação operacional</P>
-                                            <P class="text-form-green">Fase Quatro</P>
-                                            <P class="text-form-white text-form">Relatórios / Análise / Otimização</P>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-buttons">
-                                <div class="text-center">
-                                    <button class="form-buttons-voltar" type="button" onclick="plusSlides(-4)">Voltar</button>
-                                    <button class="form-buttons-green" type="button" onclick="plusSlides(2); saveNum(2);">Avançar</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="step-bar">
-                            <div class="s1 col-xs-2">01</div>
-                            <div class="s2 current-step col-xs-4">02</div>
-                            <div class="s3 col-xs-4">03</div>
-                            <div class="s4 col-xs-2">04</div>
-                            <div class="col-xs-12">
-                                <div class="steps-wizard">
-                                    <div class="step2"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab " id="tabstep6">
-                    <div class="container">
-                        <div class="tab-bar">
-                            <div class="row">
-                                <div class="desafio">
-                                    <div class="col-md-3 col-md-offset-2">
-                                        <div class="text-center">
-                                            <h2 class="text-titles-h2-form">DESAFIO DA EMPRESA</h2>
-                                            <div class="text-form-white text-form">
-                                                <P class="text-form">A empresa quer desenvolver uma plataforma digital</P>
-                                                <P class="text-form">A empresa não sabe como desenvolver as funcionalidades da plataforma</P>
-                                                <P class="text-form">Tempo recomendado:</P>
-                                            </div>
-                                            <P class="text-form-green">12 meses</P>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="propomos">
-                                    <div class="col-md-3 col-md-offset-2">
-                                        <div class="text-center">
-                                            <h2 class="text-titles-h2-form">PROJETO QUE PROPOMOS</h2>
-                                            <P class="text-form-green">Fase Um</P>
-                                            <P class="text-form-white text-form">Avaliação e workshop presencial</P>
-                                            <P class="text-form-green">Fase Dois</P>
-                                            <P class="text-form-white text-form">Documento funcional e técnico</P>
-                                            <P class="text-form-green">Fase Três</P>
-                                            <P class="text-form-white text-form">Desenvolvimento</P>
-                                            <P class="text-form-green">Fase Quatro</P>
-                                            <P class="text-form-white text-form">Análise e otimização</P>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-buttons">
-                                <div class="text-center">
-                                    <button class="form-buttons-voltar" type="button" onclick="plusSlides(-5)">Voltar</button>
-                                    <button class="form-buttons-green" type="button" onclick="plusSlides(1); saveNum(1);">Avançar</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="step-bar">
-                            <div class="s1 col-xs-2">01</div>
-                            <div class="s2 current-step col-xs-4">02</div>
-                            <div class="s3 col-xs-4">03</div>
-                            <div class="s4 col-xs-2">04</div>
-                            <div class="col-xs-12">
-                                <div class="steps-wizard">
-                                    <div class="step2"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab " id="tabstep7">
-                    <div class="container">
-                        <div class="tab-bar">
-                            <div class="final-form">
-                                <h2 class="text-center text-titles-h2-form">DEIXE-NOS OS<br> SEUS DADOS</h2>
+    <body>
+        <div class="solucoes-negocio">
+            <div class="multi-step-form">
+                <form data-smk-form id="regForm">
+                    <input type="hidden" name="flag[smk_update_different_campaign]" value="1">
+                    <div class="tab" id="tabstep1">
+                        <div class="container">
+                            <div class="tab-bar">
                                 <div class="row">
-                                    <div class="col-md-3 col-md-offset-3">
-                                        <input placeholder="Nome" type="text" name="lead[first_name]" id="fname">
-                                    </div>
-                                    <div class="col-md-3">
-                                        <input placeholder="Apelido" type="text" name="lead[second_name]" id="f2name">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-6 col-md-offset-3">
-                                        <input placeholder="Email" type="email" name="lead[email]" id="femail">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-3 col-md-offset-3">
-                                        <input placeholder="Empresa" type="text" name="extra[company]" id="fcompany">
-                                    </div>
-                                    <div class="col-md-3">
-                                        <input placeholder="Telemóvel" type="text" name="lead[phone]" id="fphone">
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-3 col-md-offset-3">
-                                        <select class="selectpicker arrow-select" name="extra[contact_role]">
-                                <option value="" disabled selected>Cargo</option>
-                                <option label="Administrator" value="Administrator">Administrador</option>
-                                <option label="Collaborator" value="Collaborator">Colaborador</option>
-                                <option label="Director" value="Director">Diretor</option>
-                                <option label="Manager" value="Manager">Gestor</option>
-                                <option label="C-Level" value="C-Level">Presidente</option>
-                                <option label="Freelancer" value="Freelancer">Trabalhador independente</option>
-                            </select>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <select class="selectpicker" name="extra[contact_role_area]">
-                                <option value="" disabled selected>Área</option>
-                                <option label="Administrativo" value="administrative">Administrativo</option>
-                                <option label="Comercial" value="commercial">Comercial</option>
-                                <option label="Comunicação" value="communications">Comunicação</option>
-                                <option label="Financeiro" value="finance">Financeiro</option>
-                                <option label="Geral / Executivo" value="executive"> Geral / Executivo</option>
-                                <option label="Jurídico" value="legal">Jurídico</option>
-                                <option label="Marketing" value="marketing">Marketing</option>
-                                <option label="Operações" value="operations">Operações</option>
-                                <option label="Outro" value="other">Outro</option>
-                                <option label="Produção" value="production">Produção</option>
-                                <option label="Recursos Humanos" value="human resources">Recursos Humanos</option>
-                                <option label="Tecnológico" value="technologic">Tecnológico</option>
-                            </select>
+                                    <div class="col-lg-5 col-md-offset-1">
+                                        <h2 class="text-titles-h2-form">COMO É QUE O DIGITAL<br> CONTRIBUI PARA O SEU<br> NEGÓCIO?</h2>
+                                        <div class="text-subtitle-form text-form">SELECIONE A FASE EM QUE SE ENCONTRA.</div><br>
+                                        <input type="radio" name="fase" onclick="plusSlides(1)" id="r1" value="first_stage"><label class="text-form" for="r1">01&nbsp;&nbsp;Nada, mas tem potencial</label><br>
+                                        <input type="radio" name="fase" onclick="plusSlides(2)" id="r2" value="second_stage"><label class="text-form" for="r2">02&nbsp;&nbsp;Pouco, quero melhorar</label><br>
+                                        <input type="radio" name="fase" onclick="plusSlides(3)" id="r3" value="third_stage"><label class="text-form" for="r3">03&nbsp;&nbsp;Há investimento, mas ainda não é negócio</label><br>
+                                        <input type="radio" name="fase" onclick="plusSlides(4)" id="r4" value="fourth_stage"><label class="text-form" for="r4">04&nbsp;&nbsp;Já tenho resultados, mas quero melhorar</label><br>
                                     </div>
                                 </div>
                             </div>
-                            <div class="form-buttons">
-                                <div class="text-center">
-                                    <button class="form-buttons-voltar" type="button" onclick="backFinal(num)">Voltar</button>
-                                    <button class="form-buttons-green" type="button" onclick="return validateForm()">Vamos lá</button>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="step-bar">
-                            <div class="s1 col-xs-2">01</div>
-                            <div class="s2 col-xs-4">02</div>
-                            <div class="s3 current-step col-xs-4">03</div>
-                            <div class="s4 col-xs-2">04</div>
-                            <div class="col-xs-12">
-                                <div class="steps-wizard">
-                                    <div class="step3"></div>
+                            <div class="step-bar">
+                                <div class="s1 current-step col-xs-2">01</div>
+                                <div class="s2 col-xs-4">02</div>
+                                <div class="s3 col-xs-4">03</div>
+                                <div class="s4 col-xs-2">04</div>
+                                <div class="col-xs-12">
+                                    <div class="steps-wizard">
+                                        <div class="step1"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="tab " id="tabstep8">
-                    <div class="container">
-                        <div class="tab-bar">
-                            <h2 class="text-center text-titles-h2-form">OBRIGADO PELO CONTACTO.</h2>
-                            <div class="text-center text-form-white text-form">
-                                <p>Em breve enviaremos mais informações sobre as opções escolhidas.</p>
+                    <div class="tab" id="tabstep2">
+                        <div class="container">
+                            <div class="tab-bar">
+                                <div class="row">
+                                    <div class="col-md-4 col-md-offset-1 desafio">
+                                        <h2 class="text-titles-h2-form">O SEU DIAGNÓSTICO</h2>
+                                        <div class="text-subtitle-form text-form">01&nbsp;&nbsp;Nada, mas tem potencial</div><br>
+                                        <div class="text-form-white text-form">
+                                            <p class="text-form"><a class="text-form-green"><b>-</b></a> A empresa não tem propriedades digitais</p>
+                                            <p class="text-form"><a class="text-form-green"><b>-</b></a> A empresa quer iniciar uma estratégia digital</p>
+                                            <p class="text-form"><a class="text-form-green"><b>-</b></a> A empresa quer perceber o potencial do seu negócio</p>
+                                            <p class="text-form"><a class="text-form-green"><b>-</b></a> Tempo recomendado: <a class="text-form-green">12 meses</a></p>  
+                                        </div>
+                                        <button class="button" type="button" onclick="plusSlides(-1)">Voltar</button>
+                                    </div>
+                                    <div class="col-md-4 col-md-offset-2 propomos">
+                                        <h2 class="text-titles-h2-form">A NOSSA PROPOSTA</h2>
+                                        <p class="text-form-green">Fase Um</p>
+                                        <p class="text-form-white text-form">Avaliação e workshop presencial</p>
+                                        <p class="text-form-green">Fase Dois</p>
+                                        <p class="text-form-white text-form">Implementação / Configuração / Integração</p>
+                                        <p class="text-form-green">Fase Três</p>
+                                        <p class="text-form-white text-form">Formação operacional</p>
+                                        <p class="text-form-green">Fase Quatro</p>
+                                        <p class="text-form-white text-form">Relatórios / Análise / Otimização</p>
+                                        <button class="button green" type="button" onclick="plusSlides(4); saveNum(4);">Peça-nos uma proposta</button>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="step-bar">
-                            <div class="s1 col-xs-2">01</div>
-                            <div class="s2 col-xs-4">02</div>
-                            <div class="s3 col-xs-4">03</div>
-                            <div class="s4  current-step col-xs-2">04</div>
-                            <div class="col-xs-12">
-                                <div class="steps-wizard">
-                                    <div class="step4"></div>
+                            <div class="step-bar">
+                                <div class="s1 col-xs-2">01</div>
+                                <div class="s2 current-step col-xs-4">02</div>
+                                <div class="s3 col-xs-4">03</div>
+                                <div class="s4 col-xs-2">04</div>
+                                <div class="col-xs-12">
+                                    <div class="steps-wizard">
+                                        <div class="step2"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </form>
+                    <div class="tab" id="tabstep3">
+                        <div class="container">
+                            <div class="tab-bar">
+                                <div class="row">
+                                    <div class="col-md-4 col-md-offset-1 desafio">
+                                        <h2 class="text-titles-h2-form">O SEU DIAGNÓSTICO</h2>
+                                        <div class="text-subtitle-form text-form">02&nbsp;&nbsp;Pouco, quero melhorar</div>
+                                        <div class="text-form-white text-form">
+                                            <p class="text-form"><a class="text-form-green"><b>-</b></a> A empresa pode ter propriedades digitais</p>
+                                            <p class="text-form"><a class="text-form-green"><b>-</b></a> A empresa quer refazer uma estratégia digital</p>
+                                            <p class="text-form"><a class="text-form-green"><b>-</b></a> A empresa quer obter melhores resultados de negócio</p>
+                                            <p class="text-form"><a class="text-form-green"><b>-</b></a> Tempo recomendado: <a class="text-form-green">9 meses</a></p>
+                                        </div>
+                                        <button class="button" type="button" onclick="plusSlides(-2)">Voltar</button>
+                                    </div>
+                                    <div class="col-md-4 col-md-offset-2 propomos">
+                                        <h2 class="text-titles-h2-form">A NOSSA PROPOSTA</h2>
+                                        <p class="text-form-green">Fase Um</p>
+                                        <p class="text-form-white text-form">Avaliação e workshop presencial</p>
+                                        <p class="text-form-green">Fase Dois</p>
+                                        <p class="text-form-white text-form">Implementação / Configuração / Integração</p>
+                                        <p class="text-form-green">Fase Três</p>
+                                        <p class="text-form-white text-form">Formação operacional</p>
+                                        <p class="text-form-green">Fase Quatro</p>
+                                        <p class="text-form-white text-form">Relatórios / Análise / Otimização</p>
+                                        <button class="button green" type="button" onclick="plusSlides(3); saveNum(3);">Peça-nos uma proposta</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-bar">
+                                <div class="s1 col-xs-2">01</div>
+                                <div class="s2 current-step col-xs-4">02</div>
+                                <div class="s3 col-xs-4">03</div>
+                                <div class="s4 col-xs-2">04</div>
+                                <div class="col-xs-12">
+                                    <div class="steps-wizard">
+                                        <div class="step2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab" id="tabstep4">
+                        <div class="container">
+                            <div class="tab-bar">
+                                <div class="row">
+                                    <div class="col-md-4 col-md-offset-1 desafio">
+                                        <h2 class="text-titles-h2-form">O SEU DIAGNÓSTICO</h2>
+                                        <div class="text-subtitle-form text-form">03&nbsp;&nbsp;Há investimento, mas ainda não é negócio</div>
+                                        <div class="text-form-white text-form">
+                                            <p class="text-form"><a class="text-form-green"><b>-</b></a> A empresa está a criar um novo negócio digital</p>
+                                            <p class="text-form"><a class="text-form-green"><b>-</b></a> A empresa quer testar o seu conceito em pouco tempo</p>
+                                            <p class="text-form"><a class="text-form-green"><b>-</b></a> Tempo recomendado: <a class="text-form-green">4 meses</a></p>
+                                        </div>
+                                        <button class="button" type="button" onclick="plusSlides(-3)">Voltar</button>
+                                    </div>
+                                    <div class="col-md-4 col-md-offset-2 propomos">
+                                        <h2 class="text-titles-h2-form">A NOSSA PROPOSTA</h2>
+                                        <p class="text-form-green">Fase Um</p>
+                                        <p class="text-form-white text-form">Avaliação e workshop presencial</p>
+                                        <p class="text-form-green">Fase Dois</p>
+                                        <p class="text-form-white text-form">Implementação / Configuração / Integração</p>
+                                        <p class="text-form-green">Fase Três</p>
+                                        <p class="text-form-white text-form">Experimentação e otimização</p>
+                                        <p class="text-form-green">Fase Quatro</p>
+                                        <p class="text-form-white text-form">Relatórios / Análise</p>
+                                        <button class="button green" type="button" onclick="plusSlides(2); saveNum(2);">Peça-nos uma proposta</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-bar">
+                                <div class="s1 col-xs-2">01</div>
+                                <div class="s2 current-step col-xs-4">02</div>
+                                <div class="s3 col-xs-4">03</div>
+                                <div class="s4 col-xs-2">04</div>
+                                <div class="col-xs-12">
+                                    <div class="steps-wizard">
+                                        <div class="step2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab" id="tabstep5">
+                        <div class="container">
+                            <div class="tab-bar">
+                                <div class="row">
+                                    <div class="col-md-4 col-md-offset-1 desafio">
+                                        <h2 class="text-titles-h2-form">O SEU DIAGNÓSTICO</h2>
+                                        <div class="text-subtitle-form text-form">04&nbsp;&nbsp;Já tenho resultados, mas quero melhorar</div>
+                                        <div class="text-form-white text-form">
+                                            <p class="text-form"><a class="text-form-green"><b>-</b></a> A empresa tem propriedades digitais</p>
+                                            <p class="text-form"><a class="text-form-green"><b>-</b></a> A empresa quer dinamizar uma estratégia digital</p>
+                                            <p class="text-form"><a class="text-form-green"><b>-</b></a> A empresa precisa encontrar um equilíbrio</p>
+                                            <p class="text-form"><a class="text-form-green"><b>-</b></a> Tempo recomendado: <a class="text-form-green">9 meses</a></p>
+                                        </div>
+                                        <button class="button" type="button" onclick="plusSlides(-4)">Voltar</button>
+                                    </div>
+                                    <div class="col-md-4 col-md-offset-2 propomos">
+                                        <h2 class="text-titles-h2-form">A NOSSA PROPOSTA</h2>
+                                        <p class="text-form-green">Fase Um</p>
+                                        <p class="text-form-white text-form">Avaliação e workshop presencial</p>
+                                        <p class="text-form-green">Fase Dois</p>
+                                        <p class="text-form-white text-form">Configuração / Integração</p>
+                                        <p class="text-form-green">Fase Três</p>
+                                        <p class="text-form-white text-form">Formação operacional</p>
+                                        <p class="text-form-green">Fase Quatro</p>
+                                        <p class="text-form-white text-form">Relatórios / Análise / Otimização</p>
+                                        <button class="button green" type="button" onclick="plusSlides(1); saveNum(1);">Peça-nos uma proposta</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-bar">
+                                <div class="s1 col-xs-2">01</div>
+                                <div class="s2 current-step col-xs-4">02</div>
+                                <div class="s3 col-xs-4">03</div>
+                                <div class="s4 col-xs-2">04</div>
+                                <div class="col-xs-12">
+                                    <div class="steps-wizard">
+                                        <div class="step2"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab" id="tabstep6">
+                        <div class="container">
+                            <div class="tab-bar">
+                                <div class="final-form">
+                                    <h2 class="text-center text-titles-h2-form">DEIXE-NOS OS<br> SEUS DADOS</h2>
+                                    <div class="row">
+                                        <div class="col-md-3 col-md-offset-3">
+                                            <input placeholder="Nome" type="text" name="lead[first_name]" id="fname">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input placeholder="Apelido" type="text" name="lead[second_name]" id="f2name">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-md-offset-3">
+                                            <input placeholder="Email" type="email" name="lead[email]" id="femail">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3 col-md-offset-3">
+                                            <input placeholder="Empresa" type="text" name="extra[company]" id="fcompany">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input placeholder="Telemóvel" type="text" name="lead[phone]" id="fphone">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3 col-md-offset-3">
+                                            <select class="selectpicker arrow-select" name="extra[contact_role]">
+                                                <option value="" disabled selected>Cargo</option>
+                                                <option label="Administrator" value="Administrator">Administrador</option>
+                                                <option label="Collaborator" value="Collaborator">Colaborador</option>
+                                                <option label="Director" value="Director">Diretor</option>
+                                                <option label="Manager" value="Manager">Gestor</option>
+                                                <option label="C-Level" value="C-Level">Presidente</option>
+                                                <option label="Freelancer" value="Freelancer">Trabalhador independente</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <select class="selectpicker" name="extra[contact_role_area]">
+                                                <option value="" disabled selected>Área</option>
+                                                <option label="Administrativo" value="administrative">Administrativo</option>
+                                                <option label="Comercial" value="commercial">Comercial</option>
+                                                <option label="Comunicação" value="communications">Comunicação</option>
+                                                <option label="Financeiro" value="finance">Financeiro</option>
+                                                <option label="Geral / Executivo" value="executive"> Geral / Executivo</option>
+                                                <option label="Jurídico" value="legal">Jurídico</option>
+                                                <option label="Marketing" value="marketing">Marketing</option>
+                                                <option label="Operações" value="operations">Operações</option>
+                                                <option label="Outro" value="other">Outro</option>
+                                                <option label="Produção" value="production">Produção</option>
+                                                <option label="Recursos Humanos" value="human resources">Recursos Humanos</option>
+                                                <option label="Tecnológico" value="technologic">Tecnológico</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-buttons">
+                                    <div class="text-center">
+                                        <button class="button" type="button" onclick="backFinal(num)">Voltar</button>
+                                        <button class="button green" type="button" onclick="return validateForm()">Peça-nos uma proposta</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-bar">
+                                <div class="s1 col-xs-2">01</div>
+                                <div class="s2 col-xs-4">02</div>
+                                <div class="s3 current-step col-xs-4">03</div>
+                                <div class="s4 col-xs-2">04</div>
+                                <div class="col-xs-12">
+                                    <div class="steps-wizard">
+                                        <div class="step3"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab" id="tabstep7">
+                        <div class="container">
+                            <div class="tab-bar">
+                                <h2 class="text-center text-titles-h2-form">OBRIGADO PELO CONTACTO.</h2>
+                                <div class="text-center text-form-white text-form">
+                                    <p>Em breve enviaremos mais informações sobre as opções escolhidas.</p>
+                                </div>
+                            </div>
+                            <div class="step-bar">
+                                <div class="s1 col-xs-2">01</div>
+                                <div class="s2 col-xs-4">02</div>
+                                <div class="s3 col-xs-4">03</div>
+                                <div class="s4  current-step col-xs-2">04</div>
+                                <div class="col-xs-12">
+                                    <div class="steps-wizard">
+                                        <div class="step4"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
-    </div>
-</body>
+    </body>
 
-<!-- plugin wp-no-format to handle the && -->
-<!-- noformat on -->
-<!----------------------- MULTISTEP FORM JS START ----------------------->
+    <!-- plugin wp-no-format to handle the && -->
+    <!-- noformat on -->
+    <!----------------------- MULTISTEP FORM JS START ----------------------->
 
-<script type="text/javascript">
-    var num = {};
-    var slideIndex = 1; //first step (slideIndex) set to 1
-    showSlides(slideIndex); // call function "showSlides" to display the first step
+    <script type="text/javascript">
+        var num = {};
+        var slideIndex = 1; //first step (slideIndex) set to 1
+        showSlides(slideIndex); // call function "showSlides" to display the first step
 
 
-    function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("tab");
-        if (n > slides.length) {
-            slideIndex = 1
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("tab");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "block";
         }
-        if (n < 1) {
-            slideIndex = slides.length
+
+        function plusSlides(n) {
+            showSlides(slideIndex = slideIndex + n);
         }
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
+
+        function backSlides(n) {
+            showSlides(slideIndex = slideIndex - n);
         }
-        slides[slideIndex - 1].style.display = "block";
-    }
 
-    function plusSlides(n) {
-        showSlides(slideIndex = slideIndex + n);
-    }
+        function backFinal(n) {
+            showSlides(slideIndex = slideIndex - n);
+        }
 
-    function backSlides(n) {
-        showSlides(slideIndex = slideIndex - n);
-    }
-
-    function backFinal(n) {
-        showSlides(slideIndex = slideIndex - n);
-    }
-
-    function saveNum(n) {
-        num = n;
-    }
+        function saveNum(n) {
+            num = n;
+        }
 
 
-    //--------- Functions for validations ------------------------------------------------
+        //--------- Functions for validations ------------------------------------------------
 
-    function validateForm() {
-        var fcompany = document.getElementById('fcompany').value;
-        var fname = document.getElementById('fname').value;
-        var f2name = document.getElementById('f2name').value;
-        var femail = document.getElementById('femail').value;
+        function validateForm() {
+            var fcompany = document.getElementById('fcompany').value;
+            var fname = document.getElementById('fname').value;
+            var f2name = document.getElementById('f2name').value;
+            var femail = document.getElementById('femail').value;
 
-        if (fcompany != "" && fname != "" && f2name != "" && femail != "") {
-            /*    
+            if (fcompany != "" && fname != "" && f2name != "" && femail != "") {
+                /*    
             $("#regForm").submit(function(e) {
                 $.ajax({
                     type: "POST",
@@ -476,33 +376,33 @@
                 e.preventDefault();
             });
             */
-            plusSlides(1);
-        } else {
-            field();
-            return false;
-        }
-    }
-
-    //--------- Function for fields -----------------------------------------------------
-
-    function field() {
-        var i;
-        var fields = document.getElementsByTagName('INPUT');
-        for (var i = 0; i < fields.length; i++) {
-            if (fields[i].value == "") {
-                fields[i].className += " invalid";
-            }
-            if (fields[i].value != "") {
-                fields[i].className -= " invalid";
+                plusSlides(1);
+            } else {
+                field();
+                return false;
             }
         }
-    }
 
-    //--------- End functions ----------------------------------------------------------
+        //--------- Function for fields -----------------------------------------------------
 
-</script>
+        function field() {
+            var i;
+            var fields = document.getElementsByTagName('INPUT');
+            for (var i = 0; i < fields.length; i++) {
+                if (fields[i].value == "") {
+                    fields[i].className += " invalid";
+                }
+                if (fields[i].value != "") {
+                    fields[i].className -= " invalid";
+                }
+            }
+        }
 
-<!-- plugin wp-no-format to handle the && -->
-<!-- noformat off -->
+        //--------- End functions ----------------------------------------------------------
+
+    </script>
+
+    <!-- plugin wp-no-format to handle the && -->
+    <!-- noformat off -->
 
 </html>
