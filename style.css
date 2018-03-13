@@ -16,7 +16,25 @@ Template: collective
     display: block;
     }
 }
-
+/*⁄---------- Ajustes no menu desktop ----------*/
+.header-v2 .menu > li > a:hover{
+    color:#6be899;
+    text-decoration: none;
+}
+.header-v2 .menu > li > a{
+    text-decoration: none;
+}
+ul#menu-impacting-digital li ul.sub-menu li a{
+    padding:10px 0;
+    transition:all .1s ease;
+}
+ul#menu-impacting-digital li ul.sub-menu li a:hover{
+    color:#6be899;
+    text-decoration: none;
+}
+.header-v2 ul.menu > li > a:after{
+    display:none;
+}
 /*---------- Texts ----------*/
 .main a:hover{
     color:#6BE899;
@@ -66,6 +84,50 @@ Template: collective
     transform:scale(.99);
     box-shadow:0 0 0 rgba(0,0,0,0);
     background-color:#3F3F4E;
+}
+
+/*---------- Page title blocks ----------*/
+.page-title-block{
+    max-width:1280px;
+    margin:0 auto;
+    padding:100px 20px 100px;
+}
+.page-title-block .page-title{
+    text-align: right;
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom:10px;
+}
+.page-title-block .page-title::after{
+    content:" ";
+    display:block;
+    margin:30px 0 10px auto;
+    background-color:#32ee8d;
+    width:100px;
+    height:6px;
+ 
+}
+.page-title-block .page-description{
+    text-align: right;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    max-width: 600px;
+    margin: 10px 0 0 auto;
+    max-width:500px;
+}
+@media screen and (min-width:640px){
+    .page-title-block .page-title{
+        font-size: 60px;
+        margin-bottom:20px;
+    }
+    .page-title-block .page-description{
+        font-size: 38px;
+    }
 }
 /*---------- Image Text blocks ----------*/
 
