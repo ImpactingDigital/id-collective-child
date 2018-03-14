@@ -77,7 +77,7 @@ ul#menu-impacting-digital li ul.sub-menu li a:hover{
 }
 
 .button.green:hover {
-    box-shadow:0 2px 4px -4px rgba(60, 180, 120, 0.4), 0 4px 10px rgba(60, 180, 120, 0.5);
+    box-shadow:0 2px 4px -4px rgba(10, 50, 30, 0.4), 0 4px 10px rgba(6, 80, 40, 0.5);
     color:#fff;
 }
 .button.violet:hover, .button.blue:hover {
@@ -250,3 +250,12 @@ ul#menu-impacting-digital li ul.sub-menu li a:hover{
     padding:15px 0;
 }
 
+
+
+/*---------- Blog itens ----------*/
+
+..blog-item .overlay-container:hover .overlay{
+    background-color: rgba(0, 238, 146, 0.85);
+    left:0;
+    right:0;
+}
