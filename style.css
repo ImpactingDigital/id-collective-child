@@ -36,10 +36,10 @@ ul#menu-impacting-digital li ul.sub-menu li a:hover{
 }
 /*---------- Texts ----------*/
 .main a:hover{
-    color:#00ee92;
+    color:#6be899;
 }
 .destaque-texto{
-    background-color: #00ee92;
+    background-color: #6be899;
     color: #fff;
     padding-left:20px;
     padding-right:20px;
@@ -72,7 +72,7 @@ ul#menu-impacting-digital li ul.sub-menu li a:hover{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#322b9b', endColorstr='#522b96',GradientType=1 );
     }
 .button.green, a.button.green {
-    background-color: #00ee92;
+    background-color: #6be899;
     color:#fff;
 }
 
@@ -126,7 +126,7 @@ ul#menu-impacting-digital li ul.sub-menu li a:hover{
     content:" ";
     display:block;
     margin:30px 0 10px auto;
-    background-color:#00ee92;
+    background-color:#6be899;
     width:100px;
     height:6px;
  
@@ -216,7 +216,7 @@ ul#menu-impacting-digital li ul.sub-menu li a:hover{
         content:'';
         display:block;
         position:absolute;
-        background-color:#00ee92;
+        background-color:#6be899;
         top:0;
         z-index:-2;
         width:250px;
