@@ -1,0 +1,21 @@
+.client-gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+.client-gallery img{
+    width: 80px;
+    height: 80px;
+    opacity: .3;
+    margin: 0 5px;
+}
+.client-gallery img:hover{
+    opacity:.8;
+}
+@media screen and (min-width:640px){
+    .client-gallery img{
+        width:140px;
+        height:140px;
+        margin:0 15px;
+    }
+}
