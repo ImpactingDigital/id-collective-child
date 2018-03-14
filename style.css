@@ -152,11 +152,12 @@ ul#menu-impacting-digital li ul.sub-menu li a:hover{
     }
 }
 /*---------- Image Text blocks ----------*/
-
+.wpb_content_element{
+    margin-bottom:0;
+}
 .block-image-text{
     position:relative;
     overflow:hidden;
-    min-height:400px;
     text-align:center;
     color:#fff;
     padding:100px 20px;
@@ -164,7 +165,6 @@ ul#menu-impacting-digital li ul.sub-menu li a:hover{
 .block-image-text img{
     position:absolute;
     width:auto;
-    height:100%;
     max-width:none;
     z-index:-1;
     right:0;
@@ -177,6 +177,8 @@ ul#menu-impacting-digital li ul.sub-menu li a:hover{
         padding: 0;
         text-align:left;
         overflow:initial;
+        margin-top:60px;
+        margin-bottom:60px;
     }
     .block-image-text::after{
         content: "";
@@ -185,23 +187,30 @@ ul#menu-impacting-digital li ul.sub-menu li a:hover{
     }
     .block-image-text .text-block{
         padding:10px 20px;
-        width:40%;
-        max-width:500px;
+        width:45%;
         float:left;
     }
 
     .block-image-text img{
         position:relative;
-        width:320px;
+        width:40%;
         margin-top:20px;
     }
     .block-image-text.img-right img{
         float:right;
-        margin-left:10px;
+        margin-left:5%;
     }
     .block-image-text.img-left img{
         float:left;
-        margin-right:40px;
+        margin-right:5%;
+    }
+    .block-image-text.img-right .text-block{
+        float:right;
+        text-align: right;
+    }
+    .block-image-text.img-left .text-block{
+        float:left;
+        text-align: left;
     }
     .block-image-text .text-block::after{
         content:'';
@@ -215,12 +224,12 @@ ul#menu-impacting-digital li ul.sub-menu li a:hover{
         transition: all .6s ease;
     }
     .block-image-text.img-right .text-block::after{
-        right:90px;
-        left:auto;
+        left:58%;
+        right:auto;
     }
     .block-image-text.img-left .text-block::after{
-        left:90px;
-        right:auto;
+        right:58%;
+        left:auto;
     }
     .block-image-text:hover .text-block::after{
         top:10px;
@@ -228,41 +237,12 @@ ul#menu-impacting-digital li ul.sub-menu li a:hover{
         margin-right:-10px
     }
 }
+@media screen and (min-width: 640px){
+    .block-image-text .text-block{
+        margin-top:5%;
+    }
+}
 
-@media screen and (min-width: 960px){
-    .block-image-text{
-        padding-top:40px;
-        padding-bottom:40px;
-        max-width: 1280px;
-        margin:0 auto;
-    }
-    .block-image-text img{
-        width:500px;
-        margin-top:-20px;
-    }
-    .block-image-text.img-left img{
-        margin-right:100px;
-    }
-    .block-image-text.img-right .text-block::after{
-        right:270px;
-        left:auto;
-    }
-    .block-image-text.img-left .text-block::after{
-        left:270px;
-        right:auto;
-    }
-}
-@media screen and (min-width: 1280px){
-    .block-image-text img{
-        width:600px;
-    }
-    .block-image-text.img-left .text-block::after{
-        left:370px;
-    }
-    .block-image-text.img-right .text-block::after{
-        right:370px;
-    }
-}
 .menu-footer{
     list-style: none;
 }
