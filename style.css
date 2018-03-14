@@ -60,22 +60,22 @@ ul#menu-impacting-digital li ul.sub-menu li a:hover{
     transition:transform .2s ease, box-shadow .4s ease;
     padding:15px;
 }
-.button.blue {
+.button.blue, a.button.blue {
     background-color: #4515f9;
+    color:#fff;
 }
-.button.violet {
+.button.violet, .button.violet {
     background: #322b9b;
     background: -moz-linear-gradient(45deg, #322b9b 0%, #522b96 100%);
     background: -webkit-linear-gradient(45deg, #322b9b 0%,#522b96 100%);
     background: linear-gradient(45deg, #322b9b 0%,#522b96 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#322b9b', endColorstr='#522b96',GradientType=1 );
     }
-.button.green {
+.button.green, a.button.green {
     background-color: #00ee92;
+    color:#fff;
 }
-.button.blue {
-    background-color: #00ee92;
-}
+
 .button.green:hover {
     box-shadow:0 2px 4px -4px rgba(60, 180, 120, 0.4), 0 4px 10px rgba(60, 180, 120, 0.5);
     color:#fff;
@@ -105,7 +105,9 @@ ul#menu-impacting-digital li ul.sub-menu li a:hover{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#322b9b', endColorstr='#522b96',GradientType=1 );
     color:#fff;
 }
-
+.bg-gradient p,.bg-gradient h1, .bg-gradient h2,.bg-gradient h3 {
+    color:#fff;
+}
 /*---------- Page title blocks ----------*/
 .page-title-block{
     max-width:1280px;
