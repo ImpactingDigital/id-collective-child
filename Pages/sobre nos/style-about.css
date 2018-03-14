@@ -19,3 +19,40 @@
         margin:0 15px;
     }
 }
+
+/*---------- fotos equipa ----------*/
+.team-member .pic-f{
+    
+}
+.team-member-pic{
+    position:relative;
+    max-width:400px;
+    margin:0 auto;
+}
+.team-member-pic .pic-closed{
+    z-index: 9;
+    width:100%;
+}
+.team-member-pic .pic-open{
+    opacity: 0;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index: 10;
+    width:100%;
+    height:100%;
+    transition:opacity .2s ease;
+}
+.team-member:hover .pic-open{
+    opacity: 1;
+}
+.team-member .description p{
+    font-size: .8em;
+}
+.team-member .description .hashtag{
+    font-weight: bold;
+    color:#4515f9;
+}
+.hashtag .hash{
+    color:
+}
