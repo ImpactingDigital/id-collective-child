@@ -36,10 +36,10 @@ ul#menu-impacting-digital li ul.sub-menu li a:hover{
 }
 /*---------- Texts ----------*/
 .main a:hover{
-    color:#6BE899;
+    color:#00ee92;
 }
 .destaque-texto{
-    background-color: #6be899;
+    background-color: #00ee92;
     color: #fff;
     padding-left:20px;
     padding-right:20px;
@@ -51,38 +51,58 @@ ul#menu-impacting-digital li ul.sub-menu li a:hover{
 }
 
 /*---------- Custom ID buttons ----------*/
-.button.violet, .button.green{
+.button{
     color: #fff;
     border: 0;
-    line-height: 2em;
+    line-height: 1.2em;
     font-size:.9em;
     box-shadow:none;
     transition:transform .2s ease, box-shadow .4s ease;
+    padding:15px;
 }
-
+.button.blue {
+    background-color: #4515f9;
+}
 .button.violet {
-    background-color: #4222db;
-}
+    background: #322b9b;
+    background: -moz-linear-gradient(45deg, #322b9b 0%, #522b96 100%);
+    background: -webkit-linear-gradient(45deg, #322b9b 0%,#522b96 100%);
+    background: linear-gradient(45deg, #322b9b 0%,#522b96 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#322b9b', endColorstr='#522b96',GradientType=1 );
+    }
 .button.green {
-    background-color: #32ee8d;
+    background-color: #00ee92;
+}
+.button.blue {
+    background-color: #00ee92;
 }
 .button.green:hover {
     box-shadow:0 2px 4px -4px rgba(60, 180, 120, 0.4), 0 4px 10px rgba(60, 180, 120, 0.5);
     color:#fff;
 }
-.button.violet:hover {
+.button.violet:hover, .button.blue:hover {
     box-shadow:0 2px 4px -4px rgba(66, 34, 219, 0.4), 0 4px 20px rgba(66, 34, 219, 0.4);
 }
-.button.violet:hover,
+.button.violet:hover,.button.blue:hover,
 .button.green:hover{
     transform:scale(1.1);
     color:#fff;
 }
-.button.violet:active,
+.button.violet:active,.button.blue:active,
 .button.green:active{
     transform:scale(.99);
     box-shadow:0 0 0 rgba(0,0,0,0);
     background-color:#3F3F4E;
+}
+
+
+/*---------- Background gradient ----------*/
+.bg-gradient{
+    background: #322b9b;
+    background: -moz-linear-gradient(45deg, #322b9b 0%, #522b96 100%);
+    background: -webkit-linear-gradient(45deg, #322b9b 0%,#522b96 100%);
+    background: linear-gradient(45deg, #322b9b 0%,#522b96 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#322b9b', endColorstr='#522b96',GradientType=1 );
 }
 
 /*---------- Page title blocks ----------*/
@@ -103,7 +123,7 @@ ul#menu-impacting-digital li ul.sub-menu li a:hover{
     content:" ";
     display:block;
     margin:30px 0 10px auto;
-    background-color:#32ee8d;
+    background-color:#00ee92;
     width:100px;
     height:6px;
  
@@ -161,7 +181,7 @@ ul#menu-impacting-digital li ul.sub-menu li a:hover{
         clear: both;
     }
     .block-image-text .text-block{
-        padding:10px 0;
+        padding:10px 20px;
         width:40%;
         max-width:500px;
         float:left;
@@ -184,7 +204,7 @@ ul#menu-impacting-digital li ul.sub-menu li a:hover{
         content:'';
         display:block;
         position:absolute;
-        background-color:#32ee8d;
+        background-color:#00ee92;
         top:0;
         z-index:-2;
         width:250px;
