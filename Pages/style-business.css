@@ -84,6 +84,48 @@
 .link-grey:visited{
     text-decoration: none;
 }
+.final-form{
+    color: white;
+}
+.final-form input{
+    font-family: Montserrat, Arial, sans-serif;
+    color: white;
+    width: 100%;
+    margin: 25px 0 25px 0;
+    padding: 10px 10px 10px 10px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid white;
+    transition: 500ms ease, 500ms ease;
+    -webkit-transition: 500ms ease, 500ms ease;
+
+}
+.final-form input:focus{
+    border-bottom: 2px solid #00F277;
+}
+
+.final-form .selectpicker{
+    -webkit-appearance: none;
+    font-family: Montserrat, Arial, sans-serif;
+    width: 100%;
+    margin: 25px 0 25px 0;
+    padding: 10px 10px 10px 10px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 0px 0px 0px 0px;
+    transition: 500ms ease, 500ms ease;
+    -webkit-transition: 500ms ease, 500ms ease;    
+}
+
+.final-form .selectpicker:focus{
+   outline-style: none;
+   border: 2px solid #00F277;
+}
+
+input.invalid{
+    border-bottom: 2px solid #f25d00;
+}
 
 /* ---------------------------------- CSS Página Soluções de Negócio  ----------------------------------  */
 

@@ -49,11 +49,66 @@
             
 <!--- /DIAGNOSTICO --->
                 
-<!--- PROPOSTA --->
+<!--- FORMULÁRIO --->
+
+
+                                <div class="final-form">
+                                    <div class="row">
+                                        <div class="col-md-3 col-md-offset-3">
+                                            <input placeholder="Nome" type="text" name="lead[first_name]" id="fname" required>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input placeholder="Apelido" type="text" name="lead[second_name]" id="f2name" required>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 col-md-offset-3">
+                                            <input placeholder="Email" type="email" name="lead[email]" id="femail" required>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3 col-md-offset-3">
+                                            <input placeholder="Empresa" type="text" name="extra[company]" id="fcompany">
+                                        </div>
+                                        <div class="col-md-3">
+                                            <input placeholder="Telemóvel" type="text" name="lead[phone]" id="fphone">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-3 col-md-offset-3">
+                                            <select class="selectpicker arrow-select" name="extra[contact_role]">
+                                                <option value="" disabled selected>Cargo</option>
+                                                <option label="Administrator" value="Administrator">Administrador</option>
+                                                <option label="Collaborator" value="Collaborator">Colaborador</option>
+                                                <option label="Director" value="Director">Diretor</option>
+                                                <option label="Manager" value="Manager">Gestor</option>
+                                                <option label="C-Level" value="C-Level">Presidente</option>
+                                                <option label="Freelancer" value="Freelancer">Trabalhador independente</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <select class="selectpicker" name="extra[contact_role_area]">
+                                                <option value="" disabled selected>Área</option>
+                                                <option label="Administrativo" value="administrative">Administrativo</option>
+                                                <option label="Comercial" value="commercial">Comercial</option>
+                                                <option label="Comunicação" value="communications">Comunicação</option>
+                                                <option label="Financeiro" value="finance">Financeiro</option>
+                                                <option label="Geral / Executivo" value="executive"> Geral / Executivo</option>
+                                                <option label="Jurídico" value="legal">Jurídico</option>
+                                                <option label="Marketing" value="marketing">Marketing</option>
+                                                <option label="Operações" value="operations">Operações</option>
+                                                <option label="Outro" value="other">Outro</option>
+                                                <option label="Produção" value="production">Produção</option>
+                                                <option label="Recursos Humanos" value="human resources">Recursos Humanos</option>
+                                                <option label="Tecnológico" value="technologic">Tecnológico</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
 
 
 
-<!--- /PROPOSTA --->
+<!--- /FORMULÁRIO --->
                 
              
        </div> 
