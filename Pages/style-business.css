@@ -26,37 +26,26 @@
     font-weight: bold;
     margin-top: 28px;
 }
-.links-anchors input[type="radio"]{
-    display:none;
-}
-.links-anchors label{
-    display:block;
-    width:100%;
-}
-.links-anchors label a{
+.links-anchors{
     cursor: pointer;
     width: 100%;
     color: #FFFFFF;
     text-decoration: none;
     transition: 500ms ease, 500ms ease;
     padding: 5px;
+    margin-top: 5px;
     border: 2px solid #00ee92;
     background-color: transparent;
+    text-align: left;
 }
-.links-anchors label a:hover{
+.links-anchors:hover{
+    color: black;
     background-color: #00ee92;
     text-decoration: none;
-    color:#fff;
 }
-.links-anchors label a.:visited{
-    color: #FFFFFF;
-    text-decoration: none;
+.links-anchors:visited{
+    background-color: #00ee92;
 }
-.links-anchors input[type=radio]:checked + label a{
-    background-color:#4515f9;
-    border-color:#4515f9;
-}
-
 .square-list{
     list-style: none;
 }
@@ -81,6 +70,10 @@
 .link-grey:visited{
     text-decoration: none;
 }
+
+/* ---------------------------------- CSS Página Soluções de Negócio  ----------------------------------  */
+/* ------------------------------ CSS Página Soluções de Negócio / Form  -------------------------------  */
+
 .final-form{
     color: white;
 }
@@ -88,7 +81,7 @@
     font-family: Montserrat, Arial, sans-serif;
     color: white;
     width: 100%;
-    margin: 25px 0 25px 0;
+    margin: 10px 0 10px 0;
     padding: 10px 10px 10px 10px;
     background: transparent;
     border: 0;
@@ -99,11 +92,10 @@
 
 }
 .final-form input:focus{
-    border-bottom: 2px solid #00F277;
+    border-bottom: 2px solid #00ee92;
 }
-
 .final-form .selectpicker{
-    -webkit-appearance: none;
+    display: inline-block;
     font-family: Montserrat, Arial, sans-serif;
     width: 100%;
     margin: 25px 0 25px 0;
@@ -112,17 +104,17 @@
     border: 2px solid white;
     border-radius: 0px 0px 0px 0px;
     transition: 500ms ease, 500ms ease;
-    -webkit-transition: 500ms ease, 500ms ease;    
+    -webkit-transition: 500ms ease, 500ms ease;
+    -moz-transition: 500ms ease, 500ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
-
 .final-form .selectpicker:focus{
    outline-style: none;
-   border: 2px solid #00F277;
+   border: 2px solid #00ee92;
 }
 
-input.invalid{
-    border-bottom: 2px solid #f25d00;
-}
+/* ------------------------------ CSS Página Soluções de Negócio / Form  -------------------------------  */
 
-/* ---------------------------------- CSS Página Soluções de Negócio  ----------------------------------  */
+
 
