@@ -30,36 +30,33 @@
     display:none;
 }
 .links-anchors label{
-    color: black;
-    cursor: pointer;
-    width: 100%;
-}
-.links-anchors label:hover{
-    color: black;
+    display:block;
+    width:100%;
 }
 .links-anchors label a{
-    
+    cursor: pointer;
     width: 100%;
     color: #FFFFFF;
     text-decoration: none;
-}
-.links-anchors label a:hover{
-    text-decoration: none;
-}
-.links-anchors label a:visited{
-    color: #FFFFFF;
-    text-decoration: none;
-}
-.button-sol{
+    transition: 500ms ease, 500ms ease;
     padding: 5px;
     border: 2px solid #00ee92;
     background-color: transparent;
-    transition: 500ms ease, 500ms ease;
 }
-.button-sol:hover{
+.links-anchors label a:hover{
     background-color: #00ee92;
-    box-shadow:0 2px 4px -4px rgba(60, 180, 120, 0.4), 0 4px 10px rgba(60, 180, 120, 0.5);
+    text-decoration: none;
+    color:#fff;
 }
+.links-anchors label a.:visited{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.links-anchors input[type=radio]:checked + label a{
+    background-color:#4515f9;
+    border-color:#4515f9;
+}
+
 .square-list{
     list-style: none;
 }
