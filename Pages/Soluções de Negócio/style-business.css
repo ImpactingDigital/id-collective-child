@@ -1,5 +1,8 @@
 /* ---------------------------------- CSS Página Soluções de Negócio  ----------------------------------  */
 
+body{
+overflow-x: hidden;
+}
 .green-bar{
     background-color: #00ee92;
     height: 2px;
@@ -76,51 +79,5 @@
     background-color: #00ee92;
     color:black;
 }
+
 /* ---------------------------------- CSS Página Soluções de Negócio  ----------------------------------  */
-
-/* ------------------------------ CSS Página Soluções de Negócio / Form  -------------------------------  */
-
-.final-form{
-    color: white;
-}
-.final-form input{
-    font-family: Montserrat, Arial, sans-serif;
-    color: white;
-    width: 100%;
-    margin: 10px 0 10px 0;
-    padding: 10px 10px 10px 10px;
-    background: transparent;
-    border: 0;
-    outline: 0;
-    border-bottom: 2px solid white;
-    transition: 500ms ease, 500ms ease;
-    -webkit-transition: 500ms ease, 500ms ease;
-
-}
-.final-form input:focus{
-    border-bottom: 2px solid #00ee92;
-}
-.final-form .selectpicker{
-    display: inline-block;
-    font-family: Montserrat, Arial, sans-serif;
-    width: 100%;
-    margin: 25px 0 25px 0;
-    padding: 10px 10px 10px 10px;
-    background: transparent;
-    border: 2px solid white;
-    border-radius: 0px 0px 0px 0px;
-    transition: 500ms ease, 500ms ease;
-    -webkit-transition: 500ms ease, 500ms ease;
-    -moz-transition: 500ms ease, 500ms ease;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-}
-.final-form .selectpicker:focus{
-   outline-style: none;
-   border: 2px solid #00ee92;
-}
-
-/* ------------------------------ CSS Página Soluções de Negócio / Form  -------------------------------  */
-
-
-
