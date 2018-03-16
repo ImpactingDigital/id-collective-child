@@ -59,6 +59,8 @@
     color: #00ee92;
 }
 .link-grey{
+    padding: 15px 15px 15px 15px ;
+    display: inline-block;
     transition: 500ms ease, 500ms ease;
     color: #999999;
     text-decoration: none;
@@ -70,8 +72,12 @@
 .link-grey:visited{
     text-decoration: none;
 }
-
+.checked{
+    background-color: #00ee92;
+    color:black;
+}
 /* ---------------------------------- CSS Página Soluções de Negócio  ----------------------------------  */
+
 /* ------------------------------ CSS Página Soluções de Negócio / Form  -------------------------------  */
 
 .final-form{
