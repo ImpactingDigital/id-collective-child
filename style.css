@@ -7,6 +7,12 @@ Author URI: http://impacting.digital/
 Version: 1.0
 Template: collective
 */
+/*⁄---------- Butão to-top ----------*/
+#to-top{
+background-color: transparent;
+bottom:100px;
+}
+/*⁄---------- Butão to-top ----------*/
 
 /*⁄---------- Ajustes no menu mobile ----------*/
 
