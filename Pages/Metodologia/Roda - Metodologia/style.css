@@ -1,8 +1,8 @@
-html, body {
-    overflow: hidden;
-}
 path:hover{
     cursor: pointer;
+}
+polygon{
+    transition: all 700ms;
 }
 polygon:hover{
     fill: #00F277;
@@ -12,14 +12,20 @@ polygon:hover{
 polygon#Fill-19, polygon#Fill-20, polygon#Fill-23, polygon#Fill-21{
     pointer-events: none;
 }
+path{
+    pointer-events: none;
+}
 
 .wrapper{
+    position: relative;
+    width: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.click-me img{
+    right: 5px;
     position: absolute;
-    width: 85%;
-    left:5%;
-    margin:15px;
-    border-radius: 50%; 
-    box-shadow: 0 15px 7px #e2e2e2;
+    width: 18%;
 }
 
 .roda-overlay {
@@ -30,7 +36,7 @@ polygon#Fill-19, polygon#Fill-20, polygon#Fill-23, polygon#Fill-21{
     bottom: 0;
     left: 0;
     border-radius: 50%;
-    background-color: rgba(247, 247, 247, 0.8);
+    background-color: rgba(247, 247, 247, 0.6);
 
     transform: scale(0);
     transition: all 0.5s ease;
@@ -46,14 +52,25 @@ polygon#Fill-19, polygon#Fill-20, polygon#Fill-23, polygon#Fill-21{
 }
 .roda-overlay h3 {
     font-family: Montserrat;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #2CEB82;
+    text-shadow: 0 5px 15px white;
 }
-
 .roda-overlay p {
     color: #757575;
-    font-family: "Hind Vadodara";
+   font-family: Montserrat;
+    font-size: 0.8rem;
     line-height: 1.5rem;
+}
+
+@media (min-width:450px) {
+    .roda-overlay h3 {
+    font-size: 2rem;
+
+}
+    .roda-overlay p {
+    font-size: 1.2rem;
+}
 }
 .roda-overlay button {
     background-color: transparent;
@@ -71,7 +88,6 @@ polygon#Fill-19, polygon#Fill-20, polygon#Fill-23, polygon#Fill-21{
 .appear{
     display: block !important;
 }
-
 
 /*
 torna todas o conteudo invisivel para quando for acionada a class appear n aparecerem todos

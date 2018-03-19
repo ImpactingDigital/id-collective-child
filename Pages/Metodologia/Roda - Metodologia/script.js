@@ -7,47 +7,47 @@ $(document).ready(function() {
         //no switch
         switch(event.target.id.toString()){
             case "estrategia_field":
-                $(".roda").css("filter","blur(10px)");
+                $(".roda").css("filter","blur(6px)");
                 $(".roda-overlay").addClass("scale-up");
                 $("#estrategia-content").addClass("appear");
                 break;
             case "modelo_field":
-                $(".roda").css("filter","blur(10px)");
+                $(".roda").css("filter","blur(6px)");
                 $(".roda-overlay").addClass("scale-up");
                 $("#modelo-content").addClass("appear");
                 break;
             case "automacao_field":
-                $(".roda").css("filter","blur(10px)");
+                $(".roda").css("filter","blur(6px)");
                 $(".roda-overlay").addClass("scale-up");
                 $("#automacao-content").addClass("appear");
                 break;
             case "plataforma_field":
-                $(".roda").css("filter","blur(10px)");
+                $(".roda").css("filter","blur(6px)");
                 $(".roda-overlay").addClass("scale-up");
                 $("#plataforma-content").addClass("appear");
                 break;
             case "processos_field":
-                $(".roda").css("filter","blur(10px)");
+                $(".roda").css("filter","blur(6px)");
                 $(".roda-overlay").addClass("scale-up");
                 $("#processos-content").addClass("appear");
                 break;
             case "venda_field":
-                $(".roda").css("filter","blur(10px)");
+                $(".roda").css("filter","blur(6px)");
                 $(".roda-overlay").addClass("scale-up");
                 $("#venda-content").addClass("appear");
                 break;
             case "angariacao_field":
-                $(".roda").css("filter","blur(10px)");
+                $(".roda").css("filter","blur(6px)");
                 $(".roda-overlay").addClass("scale-up");
                 $("#angariacao-content").addClass("appear");
                 break;
             case "enriquecimento_field":
-                $(".roda").css("filter","blur(10px)");
+                $(".roda").css("filter","blur(6px)");
                 $(".roda-overlay").addClass("scale-up");
                 $("#enriquecimento-content").addClass("appear");
                 break;
             case "relacionamento_field":
-                $(".roda").css("filter","blur(10px)");
+                $(".roda").css("filter","blur(6px)");
                 $(".roda-overlay").addClass("scale-up");
                 $("#relacionamento-content").addClass("appear");
                 break;
@@ -61,47 +61,47 @@ $(document).ready(function() {
 
     $("path").click(function () {
         if($(this).parent().is('#estrategia')){
-            $(".roda").css("filter","blur(10px)");
+            $(".roda").css("filter","blur(6px)");
             $(".roda-overlay").addClass("scale-up");
             $("#estrategia-content").addClass("appear");
         }
         else if($(this).parent().is('#modelo')){
-            $(".roda").css("filter","blur(10px)");
+            $(".roda").css("filter","blur(6px)");
             $(".roda-overlay").addClass("scale-up");
             $("#modelo-content").addClass("appear");
         }
         else if($(this).parent().is('#automacao')){
-            $(".roda").css("filter","blur(10px)");
+            $(".roda").css("filter","blur(6px)");
             $(".roda-overlay").addClass("scale-up");
             $("#automacao-content").addClass("appear");
         }
         else if($(this).parent().is('#plataformas')){
-            $(".roda").css("filter","blur(10px)");
+            $(".roda").css("filter","blur(6px)");
             $(".roda-overlay").addClass("scale-up");
             $("#plataforma-content").addClass("appear");
         }
         else if($(this).parent().is('#processos')){
-            $(".roda").css("filter","blur(10px)");
+            $(".roda").css("filter","blur(6px)");
             $(".roda-overlay").addClass("scale-up");
             $("#processos-content").addClass("appear");
         }
         else if($(this).parent().is('#vendas')){
-            $(".roda").css("filter","blur(10px)");
+            $(".roda").css("filter","blur(6px)");
             $(".roda-overlay").addClass("scale-up");
             $("#venda-content").addClass("appear");
         }
         else if($(this).parent().is('#angariacao')){
-            $(".roda").css("filter","blur(10px)");
+            $(".roda").css("filter","blur(6px)");
             $(".roda-overlay").addClass("scale-up");
             $("#angariacao-content").addClass("appear");
         }
         else if($(this).parent().is('#enriquecimento')){
-            $(".roda").css("filter","blur(10px)");
+            $(".roda").css("filter","blur(6px)");
             $(".roda-overlay").addClass("scale-up");
             $("#enriquecimento-content").addClass("appear");
         }
         else if($(this).parent().is('#relacionamento')){
-            $(".roda").css("filter","blur(10px)");
+            $(".roda").css("filter","blur(6px)");
             $(".roda-overlay").addClass("scale-up");
             $("#relacionamento-content").addClass("appear");
         }
