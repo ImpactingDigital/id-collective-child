@@ -20,5 +20,8 @@
     color: #00ee92;
     text-transform: uppercase; 
 }
+.collective-title{
+    visibility: hidden;
+}
 
 /* ------------------------------ CSS Página de Agradecimento ------------------------------- */
