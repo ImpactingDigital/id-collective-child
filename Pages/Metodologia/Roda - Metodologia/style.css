@@ -1,0 +1,84 @@
+html, body {
+    overflow: hidden;
+}
+path:hover{
+    cursor: pointer;
+}
+polygon:hover{
+    fill: #00F277;
+    cursor: pointer;
+}
+
+polygon#Fill-19, polygon#Fill-20, polygon#Fill-23, polygon#Fill-21{
+    pointer-events: none;
+}
+
+.wrapper{
+    position: absolute;
+    width: 85%;
+    left:5%;
+    margin:15px;
+    border-radius: 50%; 
+    box-shadow: 0 15px 7px #e2e2e2;
+}
+
+.roda-overlay {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 50%;
+    background-color: rgba(247, 247, 247, 0.8);
+
+    transform: scale(0);
+    transition: all 0.5s ease;
+}
+.roda-overlay .container {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    text-align: center;
+    border-radius: 0;
+}
+.roda-overlay h3 {
+    font-family: Montserrat;
+    font-size: 2rem;
+    color: #2CEB82;
+}
+
+.roda-overlay p {
+    color: #757575;
+    font-family: "Hind Vadodara";
+    line-height: 1.5rem;
+}
+.roda-overlay button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+/*Classes de controlo do overlay*/
+.scale-up {
+    transform: scale(1);
+    transform-origin: center;
+    display: block;
+}
+.appear{
+    display: block !important;
+}
+
+
+/*
+torna todas o conteudo invisivel para quando for acionada a class appear n aparecerem todos
+ao mesmo tempo
+*/
+.container #estrategia-content,#modelo-content,#automacao-content,#plataforma-content,
+#processos-content,#angariacao-content,#enriquecimento-content,
+#relacionamento-content,#venda-content{
+    display: none;
+}
