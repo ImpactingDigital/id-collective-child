@@ -1,0 +1,83 @@
+/* ---------------------------------- CSS Página Soluções de Negócio  ----------------------------------  */
+
+body{
+overflow-x: hidden;
+}
+.green-bar{
+    background-color: #00ee92;
+    height: 2px;
+    margin-top: 35px;
+}
+.titulo-header{
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 50px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    line-height: 1.2em;
+}
+.subtitulo-header{
+    font-family: Montserrat, Arial, sans-serif;
+    font-size: 18px;
+    color: #00ee92;
+    text-transform: uppercase; 
+}
+.titulo-numero{
+    font-size: 90px;
+    color: #00ee92;
+    font-weight: bold;
+    margin-top: 28px;
+}
+.links-anchors{
+    cursor: pointer;
+    width: 100%;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: 500ms ease, 500ms ease;
+    padding: 5px;
+    margin-top: 5px;
+    border: 2px solid #00ee92;
+    background-color: transparent;
+    text-align: left;
+}
+.links-anchors:hover{
+    color: black;
+    background-color: #00ee92;
+    text-decoration: none;
+}
+.links-anchors:visited{
+    background-color: #00ee92;
+}
+.square-list{
+    list-style: none;
+}
+.square-list.white{
+    color: white;
+    list-style: none;
+}
+
+.square-list li:before{
+    content: "■ " ;
+    color: #00ee92;
+}
+.link-grey{
+    padding: 15px 15px 15px 15px ;
+    display: inline-block;
+    transition: 500ms ease, 500ms ease;
+    color: #999999;
+    text-decoration: none;
+}
+.link-grey:hover{
+    color: #00ee92;
+    text-decoration: none;
+}
+.link-grey:visited{
+    text-decoration: none;
+}
+.checked{
+    background-color: #00ee92;
+    color:black;
+}
+
+/* ---------------------------------- CSS Página Soluções de Negócio  ----------------------------------  */

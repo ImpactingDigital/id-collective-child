@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Soluções de Negócio</title>
+        <link href="style-business.css" rel="stylesheet" type="text/css">
+        <link href="style-obrigado-contacto.css" rel="stylesheet" type="text/css">
+        <link href="style-proposta.css" rel="stylesheet" type="text/css">
+        <link href="../style.css" rel="stylesheet" type="text/css">
+        <link href="../custom-style.css" rel="stylesheet" type="text/css">
+        <link href="css/bootstrap.css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+<body>
+    <div class="container" >
+        <div class="row">
+            
+
+<!--- HEAD --->
+<div style="background-color: black; padding: 60px 0 60px 0;">       
+            
+<p class="titulo-header">COMO É QUE O DIGITAL CONTRIBUI<br>PARA O SEU NEGÓCIO?</p>
+<div class="green-bar" style="width: 100px"></div>
+<p class="subtitulo-header">SELECIONE A FASE EM QUE SE ENCONTRA.</p>
+
+    
+
+<form data-smk-form id="regForm1" role="form">
+<input type="hidden" name="flag[smk_update_different_campaign]" value="1">
+<input type="hidden" name="extra[contact_language]" value="pt">
+<input type="hidden" name="extra[company_country]" value="portugal">
+<input type="hidden" name="extra[company_service_id]" value="first_stage">
+<button id="bt1" class="links-anchors" type="submit" onclick="submitForm1(); window.location='#sol-neg-01'; checked(1);" >01&nbsp;&nbsp;Nada, mas tem potencial</button>
+</form>
+<form data-smk-form id="regForm2" role="form">
+<input type="hidden" name="flag[smk_update_different_campaign]" value="1">
+<input type="hidden" name="extra[contact_language]" value="pt">
+<input type="hidden" name="extra[company_country]" value="portugal">
+<input type="hidden" name="extra[company_service_id]" value="second_stage">
+<button id="bt2" class="links-anchors" type="submit" onclick="submitForm2(); window.location='#sol-neg-02'; checked(2);">02&nbsp;&nbsp;Pouco, quero melhorar</button>
+</form>
+<form data-smk-form id="regForm3" role="form">
+<input type="hidden" name="flag[smk_update_different_campaign]" value="1">
+<input type="hidden" name="extra[contact_language]" value="pt">
+<input type="hidden" name="extra[company_country]" value="portugal">
+<input type="hidden" name="extra[company_service_id]" value="third_stage">
+<button id="bt3" class="links-anchors" type="submit" onclick="submitForm3(); window.location='#sol-neg-03'; checked(3);">03&nbsp;&nbsp;Há investimento, mas ainda não é negócio</button>
+</form>
+<form data-smk-form id="regForm4" role="form">
+<input type="hidden" name="flag[smk_update_different_campaign]" value="1">
+<input type="hidden" name="extra[contact_language]" value="pt">
+<input type="hidden" name="extra[company_country]" value="portugal">
+<input type="hidden" name="extra[company_service_id]" value="fourth_stage">
+<button id="bt4" class="links-anchors" type="submit" onclick="submitForm4(); window.location='#sol-neg-04'; checked(4);">04&nbsp;&nbsp;Já tenho resultados, mas quero melhorar</button>
+</form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+function submitForm1(){
+$("#regForm1").submit(function(e) {
+$.ajax({
+type: "POST",
+url: "https://impactingdigital.smark.io/api.php/directlead/4566f85114854361469be1aff2e2db3d4a086561.json",
+data: $("#regForm1").serialize(),  
+});
+e.preventDefault();
+});}
+function submitForm2(){
+$("#regForm2").submit(function(e) {
+$.ajax({
+type: "POST",
+url: "https://impactingdigital.smark.io/api.php/directlead/4566f85114854361469be1aff2e2db3d4a086561.json",
+data: $("#regForm2").serialize(),  
+});
+e.preventDefault();
+});}
+function submitForm3(){
+$("#regForm3").submit(function(e) {
+$.ajax({
+type: "POST",
+url: "https://impactingdigital.smark.io/api.php/directlead/4566f85114854361469be1aff2e2db3d4a086561.json",
+data: $("#regForm3").serialize(),  
+});
+e.preventDefault();
+});}
+function submitForm4(){
+$("#regForm4").submit(function(e) {
+$.ajax({
+type: "POST",
+url: "https://impactingdigital.smark.io/api.php/directlead/4566f85114854361469be1aff2e2db3d4a086561.json",
+data: $("#regForm4").serialize(),  
+});
+e.preventDefault();
+});}
+function checked(n){
+var bt1 = document.getElementById('bt1');
+var bt2 = document.getElementById('bt2');
+var bt2 = document.getElementById('bt2');
+var bt2 = document.getElementById('bt2');
+if (n==1){
+bt1.className = "links-anchors checked";
+bt2.className = "links-anchors";
+bt3.className = "links-anchors";
+bt4.className = "links-anchors";
+}
+if (n==2){
+bt1.className = "links-anchors";
+bt2.className = "links-anchors checked";
+bt3.className = "links-anchors";
+bt4.className = "links-anchors";
+}
+if (n==3){
+bt1.className = "links-anchors";
+bt2.className = "links-anchors";
+bt3.className = "links-anchors checked";
+bt4.className = "links-anchors";
+}
+if (n==4){
+bt1.className = "links-anchors";
+bt2.className = "links-anchors";
+bt3.className = "links-anchors";
+bt4.className = "links-anchors checked";
+}}
+</script>
+    
+</div>            
+<!--- /HEAD --->
+
+<!--- DIAGNOSTICO --->
+            
+<div class="green-bar" style="width: 100px;"></div>
+<p class="titulo-numero">03</p>
+
+<ul class="square-list">
+<li>A empresa tem propriedades digitais</li>
+</ul>
+
+<a href="#sol-neg-inicio" class="link-grey">QUERO REDEFINIR A MINHA FASE</a>
+
+
+<a href="#sol-neg-01-01" class="button violet">QUERO CONTINUAR</a>
+            
+<!--- /DIAGNOSTICO --->
+                
+<!--- FORMULÁRIO --->
+<div style="background-color: black; padding: 60px 0 60px 0;"> 
+
+<form data-smk-form action="https://impactingdigital.smark.io/api.php/directlead/4566f85114854361469be1aff2e2db3d4a086561" method="post">
+<input type="hidden" name="redirect_ok" value="http://id2.impactingdigital.com/obrigado-pelo-contacto/">
+<input type="hidden" name="redirect_error" value="http://example.org/error_page">
+<input type="hidden" name="flag[smk_update_different_campaign]" value="1">
+<input type="hidden" name="extra[contact_language]" value="pt">
+<input type="hidden" name="extra[company_country]" value="portugal">                                
+<div class="final-form">
+<div class="row">
+<div class="col-md-3 col-md-offset-3">
+<input placeholder="Nome" type="text" name="lead[first_name]" required></div>
+<div class="col-md-3">
+<input placeholder="Apelido" type="text" name="lead[second_name]" required></div></div>
+<div class="row">
+<div class="col-md-6 col-md-offset-3">
+<input placeholder="Email" type="email" name="lead[email]" required></div></div>
+<div class="row">
+<div class="col-md-3 col-md-offset-3">
+<input placeholder="Empresa" type="text" name="extra[company]" required></div>
+<div class="col-md-3">
+<input placeholder="Telemóvel" type="text" name="lead[phone]" required>
+</div></div>
+<div class="row">
+<div class="col-md-3 col-md-offset-3">
+<select class="selectpicker arrow-select" name="extra[contact_role]">
+<option value="" disabled selected>Cargo</option>
+<option label="Administrator" value="Administrator">Administrador</option>
+<option label="Collaborator" value="Collaborator">Colaborador</option>
+<option label="Director" value="Director">Diretor</option>
+<option label="Manager" value="Manager">Gestor</option>
+<option label="C-Level" value="C-Level">Presidente</option>
+<option label="Freelancer" value="Freelancer">Trabalhador independente</option>
+</select></div>
+<div class="col-md-3">
+<select class="selectpicker" name="extra[contact_role_area]">
+<option value="" disabled selected>Área</option>
+<option label="Administrativo" value="administrative">Administrativo</option>
+<option label="Comercial" value="commercial">Comercial</option>
+<option label="Comunicação" value="communications">Comunicação</option>
+<option label="Financeiro" value="finance">Financeiro</option>
+<option label="Geral / Executivo" value="executive"> Geral / Executivo</option>
+<option label="Jurídico" value="legal">Jurídico</option>
+<option label="Marketing" value="marketing">Marketing</option>
+<option label="Operações" value="operations">Operações</option>
+<option label="Outro" value="other">Outro</option>
+<option label="Produção" value="production">Produção</option>
+<option label="Recursos Humanos" value="human resources">Recursos Humanos</option>
+<option label="Tecnológico" value="technologic">Tecnológico</option>
+</select></div></div></div>
+<div class="form-buttons">
+<div class="text-center">
+<button class="button violet" type="submit">Peça-nos uma proposta</button>
+</div>
+</div>
+</form>
+            
+            
+</div>            
+<!--- /FORMULÁRIO --->
+                
+             
+       </div> 
+    </div>
+</body>
+</html>
