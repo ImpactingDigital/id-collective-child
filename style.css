@@ -92,7 +92,20 @@ ul#menu-impacting-digital li ul.sub-menu li a:hover{
     background-color: #00ee92;
     color:#fff;
 }
-
+a.button{
+    display:inline-block;
+}
+.single-blog-content a.button{
+    border-bottom:none;
+    padding:15px;
+}
+.single-blog-content a.button.violet:hover{
+    background: #221c84;
+    background: -moz-linear-gradient(45deg, #221c84 0%, #522b96 100%);
+    background: -webkit-linear-gradient(45deg, #221c84 0%,#522b96 100%);
+    background: linear-gradient(45deg, #221c84 0%,#522b96 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#221c84', endColorstr='#522b96',GradientType=1 );
+}
 .button.green:hover {
     box-shadow:0 5px 2px -3px rgba(10, 50, 30, 0.2), 0 4px 10px rgba(6, 80, 40, 0.1);
     color:#fff;
