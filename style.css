@@ -49,6 +49,9 @@ ul#menu-impacting-digital li ul.sub-menu li a:hover{
     color: #fff;
     padding-left:20px;
     padding-right:20px;
+    line-height: 1.5em;
+    padding-bottom: 5px;
+    margin-left: -20px;
 }
 /*---------- Hashtag ----------*/
 .hashtag{
