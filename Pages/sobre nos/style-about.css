@@ -2,6 +2,7 @@
     display:flex;
     flex-wrap:wrap;
     justify-content: center;
+    
 }
 .client-gallery img{
     width: 80px;
@@ -30,8 +31,10 @@
 .team-member{
     width:135px;
     margin:5px;
-    background-color:#eee;
+    background-color:#fff;
     position:relative;
+    transition-delay: .5s;
+    transition:background-color .2s ease;
 }
 .team-member:hover{
     background-color:#000;
@@ -66,48 +69,99 @@
 }
 .team-member .description .name{
     font-weight: 500;
+    position: absolute;
+    top: 5px;
+    left:10px;
+    z-index: 12;
+    color: #fff;
 }
 
 .team-member .description .bio{
     max-height:0;
     overflow: hidden;
-    transition: max-height .2s ease;
-    transition-delay: .6s;
+    transition: all .2s ease;
+    transition-delay: .4s;
     font-size: .7em;
     line-height: 1.2em;
+    opacity:0;
+    color:#fff;
 }
 .team-member:hover .description .bio{
-    max-height:200px;
+    max-height:400px;
+    padding:15px;
+    opacity:1;
+    color:#fff;
+    transition-delay: .2s;
 }
 
 .team-member .description .hashtag{
-    font-weight: bold;
-    color:#fff;
+    font-weight: 400;
+    color:transparent;
     text-align:right;
     font-size: .8em;
     position:absolute;
-    top:5px;
+    top:105px;
     right:5px;
     z-index: 11;
 }
-.hashtag .hash{
-    font-size:1.2em;
+.team-member:hover .description .hashtag .hash{
+    font-size:1.8em;
+    color:#00ee92;
+    text-shadow: none;
 }
 .team-member:hover .description .hashtag{
-    color:#00ee92;
-}
-
-.team-member .description{
-    padding:15px;
+    color:#fff;
+    text-shadow: 0 4px 15px rgba(0,0,0,.6);
 }
 
 @media screen and (min-width:640px){
     .team-member, .team-member-pic{
         width:192px;
     }
+    .team-member .description .hashtag{
+        top:150px;
+        font-size: 1em;
+    }
+    .team-member .description .name{
+        font-size: 1.2em;
+    }
 }
-@media screen and (min-width:1024){
+@media screen and (min-width:1024px){
+    .team-member {
+        margin:5px 30px;
+    }
+    .team-member .description .bio{
+        max-height: none;
+        padding:15px;
+    }
     .team-member, .team-member-pic{
         width:220px;
     }
+    .team-member .description .hashtag{
+        top:180px;
+    }
+    .team-member .description .name{
+        font-size: 1.4em;
+    }
+}
+/*---------- Pilares ----------*/
+.nossos-pilares div{
+    background-color:rgba(0, 238, 146, 0.50);
+    color:#fff;
+    padding:15px 20px 15px 50px;
+    margin:5px 5px 0 0;
+    position:relative;
+    
+}
+.nossos-pilares{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.nossos-pilares .hashtag .hash{
+    position:absolute;
+    left:5px;
+    top:12px;
+    opacity: .2;
+    font-size: 3em;
 }
