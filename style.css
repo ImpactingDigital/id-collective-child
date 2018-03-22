@@ -81,7 +81,7 @@ ul#menu-impacting-digital li ul.sub-menu li a:hover{
     background-color: #4515f9;
     color:#fff;
 }
-.button.violet, a.button.violet {
+.button.violet, .button.violet {
     background: #322b9b;
     background: -moz-linear-gradient(45deg, #322b9b 0%, #522b96 100%);
     background: -webkit-linear-gradient(45deg, #322b9b 0%,#522b96 100%);
@@ -99,22 +99,20 @@ a.button{
     border-bottom:none;
     padding:15px;
 }
-.single-blog-content a.button.violet:hover,
-.button.violet:hover, a.button.violet:hover{
+.single-blog-content a.button.violet:hover{
     background: #221c84;
     background: -moz-linear-gradient(45deg, #221c84 0%, #522b96 100%);
     background: -webkit-linear-gradient(45deg, #221c84 0%,#522b96 100%);
     background: linear-gradient(45deg, #221c84 0%,#522b96 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#221c84', endColorstr='#522b96',GradientType=1 );
 }
-.button.violet:hover, .button.blue:hover {
-    box-shadow:0 2px 4px -4px rgba(66, 34, 219, 0.4), 0 4px 20px rgba(66, 34, 219, 0.4);
-}
 .button.green:hover {
     box-shadow:0 5px 2px -3px rgba(10, 50, 30, 0.2), 0 4px 10px rgba(6, 80, 40, 0.1);
     color:#fff;
 }
-
+.button.violet:hover, .button.blue:hover {
+    box-shadow:0 2px 4px -4px rgba(66, 34, 219, 0.4), 0 4px 20px rgba(66, 34, 219, 0.4);
+}
 .button.violet:hover,.button.blue:hover,
 .button.green:hover{
     transform:scale(1.1);
@@ -307,3 +305,25 @@ a.button{
     left:0;
     right:0;
 }
+
+
+/*---------- Slider de servicos ----------*/
+
+.container-servicos .royal-slider-container nav.style-1 div{
+    color: #333333;
+}
+.container-servicos .royal-slider .animation-block.left-middle{
+    margin-left: 0%;
+}
+.container-servicos .slider-servicos{
+    padding-left: 200px;
+    padding-right: 200px;
+}
+#sol-neg-servicos .vertical-center2-content{
+    vertical-align: top;
+}
+@media (min-width: 100px) and (max-width: 775px){
+.container-servicos .slider-servicos{
+    padding-left: 0;
+    padding-right: 0;
+}}
