@@ -1,31 +1,41 @@
-path:hover{
-    cursor: pointer;
+html{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;  
 }
-polygon{
+path{
     transition: all 700ms;
 }
-polygon:hover{
+path:hover{
     fill: #00F277;
     cursor: pointer;
 }
 
-polygon#Fill-19, polygon#Fill-20, polygon#Fill-23, polygon#Fill-21{
+.hover{
+    fill: #00F277;
+}
+
+#centro{
     pointer-events: none;
 }
-path{
+text{
     pointer-events: none;
 }
 
 .wrapper{
     position: relative;
     width: 100%;
+    height: auto;
     border-radius: 50%;
     overflow: hidden;
 }
 .click-me img{
     right: 5px;
     position: absolute;
-    width: 18%;
+    width: 15%;
 }
 
 .roda-overlay {
@@ -36,10 +46,11 @@ path{
     bottom: 0;
     left: 0;
     border-radius: 50%;
-    background-color: rgba(247, 247, 247, 0.6);
+    background-color: rgba(255, 255, 255, 0.8);
 
     transform: scale(0);
     transition: all 0.5s ease;
+
 }
 .roda-overlay .container {
     position: relative;
