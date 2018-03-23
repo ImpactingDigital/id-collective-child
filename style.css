@@ -300,7 +300,7 @@ a.button{
 
 /*---------- Blog itens ----------*/
 
-.blog-item .overlay-container:hover .overlay{
+#blog-items .blog-item .overlay-container:hover .overlay{
     background-color: rgba(0, 238, 146, 0.85);
     left:0;
     right:0;
