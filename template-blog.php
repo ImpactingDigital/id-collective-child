@@ -75,7 +75,7 @@
 			<div class="load-more-container text-center">
 				<?php if($the_Query->max_num_pages != 1):?>
 				<a href="" class="button loadMoreBtn">
-					<span><?php esc_html_e('load more','collective');?></span>
+					<span><?php esc_html_e('Ver mais','collective');?></span>
 					<div class="load-more-container">
 						<div class="spinner-1"></div>
 						<div class="spinner-2"></div>
