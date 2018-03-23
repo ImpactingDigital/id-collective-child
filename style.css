@@ -49,6 +49,17 @@ ul#menu-impacting-digital li ul.sub-menu li a:hover{
     color: #fff;
     padding-left:20px;
     padding-right:20px;
+    line-height: 1.5em;
+    padding-bottom: 5px;
+    margin-left: -20px;
+}
+/*---------- Hashtag ----------*/
+.hashtag{
+    font-weight: bold;
+    color:#4515f9;
+}
+.hashtag .hash{
+    font-size:1.2em;
 }
 
 /*---------- Logo ----------*/
@@ -81,7 +92,20 @@ ul#menu-impacting-digital li ul.sub-menu li a:hover{
     background-color: #00ee92;
     color:#fff;
 }
-
+a.button{
+    display:inline-block;
+}
+.single-blog-content a.button{
+    border-bottom:none;
+    padding:15px;
+}
+.single-blog-content a.button.violet:hover{
+    background: #221c84;
+    background: -moz-linear-gradient(45deg, #221c84 0%, #522b96 100%);
+    background: -webkit-linear-gradient(45deg, #221c84 0%,#522b96 100%);
+    background: linear-gradient(45deg, #221c84 0%,#522b96 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#221c84', endColorstr='#522b96',GradientType=1 );
+}
 .button.green:hover {
     box-shadow:0 5px 2px -3px rgba(10, 50, 30, 0.2), 0 4px 10px rgba(6, 80, 40, 0.1);
     color:#fff;
@@ -114,6 +138,9 @@ ul#menu-impacting-digital li ul.sub-menu li a:hover{
 .bg-gradient p,.bg-gradient h1, .bg-gradient h2,.bg-gradient h3 {
     color:#fff;
 }
+.bg-lightgrey{
+    background-color:#f1f2f3;
+}
 /*---------- Page title blocks ----------*/
 .page-title-block{
     max-width:1280px;
@@ -136,6 +163,14 @@ ul#menu-impacting-digital li ul.sub-menu li a:hover{
     width:100px;
     height:6px;
  
+}
+.title-separator::after{
+    content:" ";
+    display:block;
+    margin:20px auto 20px 0;
+    background-color:#00ee92;
+    width:80px;
+    height:6px;
 }
 .page-title-block .page-description{
     text-align: right;
@@ -270,3 +305,25 @@ ul#menu-impacting-digital li ul.sub-menu li a:hover{
     left:0;
     right:0;
 }
+
+
+/*---------- Slider de servicos ----------*/
+
+.container-servicos .royal-slider-container nav.style-1 div{
+    color: #333333;
+}
+.container-servicos .royal-slider .animation-block.left-middle{
+    margin-left: 0%;
+}
+.container-servicos .slider-servicos{
+    padding-left: 200px;
+    padding-right: 200px;
+}
+#sol-neg-servicos .vertical-center2-content{
+    vertical-align: top;
+}
+@media (min-width: 100px) and (max-width: 775px){
+.container-servicos .slider-servicos{
+    padding-left: 0;
+    padding-right: 0;
+}}
