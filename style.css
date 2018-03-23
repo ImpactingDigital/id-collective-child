@@ -223,8 +223,8 @@ a.button{
         padding: 0;
         text-align:left;
         overflow:initial;
-        margin-top:60px;
-        margin-bottom:60px;
+        margin-top:20px;
+        margin-bottom:20px;
     }
     .block-image-text::after{
         content: "";
