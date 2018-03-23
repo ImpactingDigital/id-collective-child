@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    console.log("yo");
     $("g").click(function (event) {
 
         //dado o argumento da função o target vai procurar o primeiro filho (polygon) do selector neste caso o "g"
@@ -106,4 +105,4 @@ $(document).ready(function() {
             $("#relacionamento-content").addClass("appear");
         }
     });
-});
+}); 
