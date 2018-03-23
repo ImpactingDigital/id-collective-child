@@ -68,7 +68,7 @@ ul#menu-impacting-digital li ul.sub-menu li a:hover{
 }
 
 /*---------- Custom ID buttons ----------*/
-.button{
+.button, a.button{
     color: #fff;
     border: 0;
     line-height: 1.2em;
