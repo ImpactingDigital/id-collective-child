@@ -158,7 +158,7 @@ function stonedthemes_blogposts_vc_map_init(){
 								if($the_Query->max_num_pages != 1):
 								$output .= '<div class="load-more-container text-center">
 												<a href="" class="button loadMoreBtn">
-													<span>load more</span>
+													<span>Ver mais</span>
 													<div class="load-more-container">
 														<div class="spinner-1"></div>
 														<div class="spinner-2"></div>
