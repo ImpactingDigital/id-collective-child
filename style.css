@@ -328,4 +328,16 @@ a.button{
     padding-right: 0;
 }}
 
+/*---------- button load more ----------*/
 
+/*---------- button load more ----------*/
+
+a.loadMoreBtn span{
+    display:none;
+    color:#fff;
+}
+
+a.loadMoreBtn::after{
+    content: "Ver mais";
+    padding: 15px;
+}
