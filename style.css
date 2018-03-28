@@ -8,7 +8,7 @@ Version: 1.0
 Template: collective
 */
 /*⁄---------- Butão to-top ----------*/
-#to-top{
+a#to-top{
 background-color: transparent;
 bottom:100px;
 }
@@ -22,7 +22,8 @@ bottom:100px;
     }
 }
 /*⁄---------- Ajustes no menu desktop ----------*/
-.header-v2 .menu > li > a:hover{
+.header-v2 .menu > li > a:hover,
+.header-v2 ul.menu li:hover > a{
     color:#00ee92;
     text-decoration: none;
 }
@@ -296,7 +297,9 @@ a.button{
     padding:15px 0;
 }
 
-
+footer .stoned-container{
+    padding-bottom:40px;
+}
 
 /*---------- Blog itens ----------*/
 
