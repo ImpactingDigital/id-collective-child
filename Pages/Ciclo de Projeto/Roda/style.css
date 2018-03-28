@@ -54,11 +54,6 @@ text{
     border-radius: 50%;
     overflow: hidden;
 }
-.click-me img{
-    right: 5px;
-    position: absolute;
-    width: 15%;
-}
 .roda-overlay {
     width: 100%;
     position: absolute;
