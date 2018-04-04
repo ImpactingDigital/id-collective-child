@@ -351,6 +351,6 @@ a.loadMoreBtn::after{
     background-color:transparent;
 }
 
-.glossario-servicos vc_grid vc_row vc_grid-gutter-30px vc_pageable-wrapper vc_hook_hover{
+.vc_grid-container.vc_clearfix.wpb_content_element.vc_basic_grid.glossario-servicos{
     font-size: 14px;
 }
