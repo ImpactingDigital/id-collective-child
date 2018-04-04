@@ -343,3 +343,14 @@ a.loadMoreBtn::after{
     content: "Ver mais";
     padding: 15px;
 }
+
+/*---------- Glossario de Serviços ----------*/
+
+.glossario-servicos .vc_btn3.vc_btn3-color-juicy-pink, .vc_btn3.vc_btn3-color-juicy-pink.vc_btn3-style-flat{
+    color: lightgrey;
+    background-color:transparent;
+}
+
+.glossario-servicos .vc_btn3.vc_btn3-color-juicy-pink, .vc_btn3.vc_btn3-color-juicy-pink.vc_btn3-style-flat p{
+    font-size: 14px;
+}
