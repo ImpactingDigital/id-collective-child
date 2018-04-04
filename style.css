@@ -346,7 +346,8 @@ a.loadMoreBtn::after{
 
 /*---------- Glossario de Serviços ----------*/
 
-.glossario-servicos .vc_btn3.vc_btn3-color-juicy-pink, .vc_btn3.vc_btn3-color-juicy-pink.vc_btn3-style-flat{
+.glossario-servicos vc_btn3-container vc_btn3-left{
+    text-align: right;
     color: lightgrey;
     background-color:transparent;
 }
