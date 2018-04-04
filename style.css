@@ -349,8 +349,9 @@ a.loadMoreBtn::after{
 .glossario-servicos .vc_btn3-container.vc_btn3-left{
     text-align: right;
 }
-.glossario-servicos .vc_btn3-container.vc_btn3-left a{
+.glossario-servicos .vc_btn3.vc_btn3-color-juicy-pink, .vc_btn3.vc_btn3-color-juicy-pink.vc_btn3-style-flat{
     background-color: transparent;
+    color: lightgrey;
 }
 
 
