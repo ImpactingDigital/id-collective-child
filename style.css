@@ -351,6 +351,6 @@ a.loadMoreBtn::after{
     background-color:transparent;
 }
 
-.glossario-servicos p{
+.glossario-servicos p, span{
     font-size: 14px;
 }
