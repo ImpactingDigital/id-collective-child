@@ -351,6 +351,6 @@ a.loadMoreBtn::after{
     background-color:transparent;
 }
 
-.glossario-servicos .vc_btn3.vc_btn3-color-juicy-pink, .vc_btn3.vc_btn3-color-juicy-pink.vc_btn3-style-flat p{
+.glossario-servicos vc_grid-item-mini vc_clearfix p{
     font-size: 14px;
 }
