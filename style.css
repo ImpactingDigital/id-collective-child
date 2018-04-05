@@ -356,6 +356,6 @@ a.loadMoreBtn::after{
 
 
 
-.glossario-servicos p, span{
+.glossario-servicos p, .glossario-servicos span{
     font-size: 14px;
 }
