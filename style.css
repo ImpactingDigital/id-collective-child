@@ -353,7 +353,10 @@ a.loadMoreBtn::after{
     background-color: transparent;
     color: grey;
 }
-
+.glossario-servicos .vc_btn3.vc_btn3-color-juicy-pink:hover, .glossario-servicos .vc_btn3.vc_btn3-color-juicy-pink.vc_btn3-style-flat:hover{
+    background-color: transparent;
+    color: black;
+}
 .glossario-servicos p, .glossario-servicos span{
     font-size: 14px;
 }
