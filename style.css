@@ -358,9 +358,9 @@ a.loadMoreBtn::after{
     font-size: 14px;
 }
 
-.glossario-servicos .vc_btn3-container .vc_btn3-left a{
+.glossario-servicos .vc_gitem-link .vc_general .vc_btn3 .vc_btn3-size-md .vc_btn3-shape-rounded .vc_btn3-style-flat .vc_btn3-color-juicy-pink a{
     display:none;
 }
-.glossario-servicos .vc_btn3-container .vc_btn3-left a{
+.glossario-servicos .vc_gitem-link .vc_general .vc_btn3 .vc_btn3-size-md .vc_btn3-shape-rounded .vc_btn3-style-flat .vc_btn3-color-juicy-pink a{
     content: "Ler mais";
 }
