@@ -373,3 +373,7 @@ a.loadMoreBtn::after{
 .glossario-servicos .vc_btn3-container{
     margin-bottom:0px;
 }
+
+.glossario-servicos vc_col-sm-12.vc_gitem-col.vc_gitem-col-align-{
+    padding:20px 20px 20px 20px;
+}
