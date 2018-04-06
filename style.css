@@ -356,6 +356,7 @@ a.loadMoreBtn::after{
 }
 .glossario-servicos p, .glossario-servicos span{
     font-size: 14px;
+    line-height: 20px;
 }
 .glossario-servicos .vc_btn3-container.vc_btn3-left{
     text-align: right;
