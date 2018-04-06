@@ -346,9 +346,6 @@ a.loadMoreBtn::after{
 
 /*---------- Glossario de Serviços ----------*/
 
-.glossario-servicos .vc_btn3-container.vc_btn3-left{
-    text-align: right;
-}
 .glossario-servicos .vc_btn3.vc_btn3-color-juicy-pink, .glossario-servicos .vc_btn3.vc_btn3-color-juicy-pink.vc_btn3-style-flat{
     background-color: transparent;
     color: grey;
@@ -360,10 +357,12 @@ a.loadMoreBtn::after{
 .glossario-servicos p, .glossario-servicos span{
     font-size: 14px;
 }
-
+.glossario-servicos .vc_btn3-container.vc_btn3-left{
+    text-align: right;
+    padding:0px;
+}
 .glossario-servicos .vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink{
     visibility: hidden;
-
 }
 .glossario-servicos .vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink:after{
     visibility: visible;
