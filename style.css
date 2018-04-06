@@ -368,4 +368,5 @@ a.loadMoreBtn::after{
 	top: 0;
 	left: 0;
     content: "Ler mais";
+    text-align: right;
 }
