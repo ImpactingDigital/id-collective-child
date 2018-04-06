@@ -360,8 +360,12 @@ a.loadMoreBtn::after{
 
 .glossario-servicos .vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink{
     visibility: hidden;
+    position: relative;
 }
 .glossario-servicos .vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink:after{
     visibility: hidden;
+    position: absolute;
+	top: 0;
+	left: 0;
     content: "Ler mais";
 }
