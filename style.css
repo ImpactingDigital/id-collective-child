@@ -357,3 +357,10 @@ a.loadMoreBtn::after{
 .glossario-servicos p, .glossario-servicos span{
     font-size: 14px;
 }
+
+.glossario-servicos a{
+    display:none;
+}
+.glossario-servicos a{
+    content: "Ler mais";
+}
