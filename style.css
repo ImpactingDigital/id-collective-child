@@ -358,9 +358,9 @@ a.loadMoreBtn::after{
     font-size: 14px;
 }
 
-.glossario-servicos a{
+.glossario-servicos .vc_btn3-container .vc_btn3-left a{
     display:none;
 }
-.glossario-servicos a{
+.glossario-servicos .vc_btn3-container .vc_btn3-left a{
     content: "Ler mais";
 }
