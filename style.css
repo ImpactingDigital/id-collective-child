@@ -374,6 +374,6 @@ a.loadMoreBtn::after{
     margin-bottom:0px;
 }
 
-.glossario-servicos .vc_gitem_row.vc_gitem-col{
+.glossario-servicos .vc_col-sm-12.vc_gitem-col.vc_gitem-col-align-{
     padding:5px 10px 10px 10px;
 }
