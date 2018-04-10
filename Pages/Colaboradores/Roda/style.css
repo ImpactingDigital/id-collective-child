@@ -6,7 +6,7 @@ html{
         -ms-user-select: none; /* Internet Explorer/Edge */
             user-select: none;  
 }
-#seta1, #seta2, #seta3, #seta4, #seta5, #seta6 {
+#gestao_hover, #marketing_hover, #ti_hover, #comunicacao_hover {
    opacity: 0;
    transition: all 700ms;  
 }
@@ -14,38 +14,40 @@ path{
     transition: all 700ms;
 }
 path:hover{
-    fill: #00F277;
     cursor: pointer;
 }
-#seta_ciclo{
-    transition: all 700ms;
+path:hover ~ #Colaboradores{
+    transform: scale(1);
 }
-path:hover ~ #seta_ciclo{
+#gestao_hover:hover{
+    opacity: 1;
+}
+#marketing_hover:hover{
+    opacity: 1;
+}
+#ti_hover:hover{
+    opacity: 1;
+}
+#comunicacao_hover:hover{
+    opacity: 1;
+}
+#gestao_div:hover{
     opacity: 0;
 }
-#avaliacao_div:hover ~ #seta1{
-    opacity: 1;
-}
-#workshop_div:hover ~ #seta2{
-    opacity: 1;
-}
-#integracao_div:hover ~ #seta3{
-    opacity: 1;
-}
-#operacao_div:hover ~ #seta4{
-    opacity: 1;
-}
-#analise_div:hover ~ #seta5{
-    opacity: 1;
-}
-#formacao_div:hover ~ #seta6{
-    opacity: 1;
-}
-#centro{
+#Colaboradores{
+    transform-origin: center;
+    transform: scale(0.9);
+    transition: all 700ms;
     pointer-events: none;
 }
 text{
     pointer-events: none;
+}
+.click-me img{
+    right: 7px;
+    position: absolute;
+    width: 16%;
+    transform: rotate(20deg);
 }
 .wrapper{
     position: relative;
@@ -62,7 +64,7 @@ text{
     bottom: 0;
     left: 0;
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.7);
     transform: scale(0);
     transition: all 0.5s ease;
 }
@@ -71,30 +73,34 @@ text{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 70%;
+    width: 65%;
     text-align: center;
     border-radius: 0;
 }
 .roda-overlay h3 {
+    margin-top: 0px;
     font-family: Montserrat;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     color: #2CEB82;
     text-shadow: 0 5px 15px white;
 }
 .roda-overlay p {
     color: #757575;
    font-family: Montserrat;
-    font-size: 0.8rem;
-    line-height: 1.5rem;
+    font-size: 0.7rem;
+    line-height: 1rem;
+    text-align: left;
 }
 
-@media (min-width:450px) {
+@media (min-width:530px) {
     .roda-overlay h3 {
     font-size: 2rem;
 
 }
     .roda-overlay p {
     font-size: 1.2rem;
+        line-height: 1.8rem;
+        text-align: left;
 }
 }
 .roda-overlay button {
@@ -118,7 +124,6 @@ text{
 torna todas o conteudo invisivel para quando for acionada a class appear n aparecerem todos
 ao mesmo tempo
 */
-.container #avaliacao-content,#workshop-content,#integracao-content,#operacao-content,
-#formacao-content,#analise-content {
+.container #gestao-content,#marketing-content,#ti-content,#comunicacao-content {
     display: none;
 }

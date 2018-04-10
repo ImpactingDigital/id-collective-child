@@ -151,7 +151,7 @@ a.button{
 .page-title-block .page-title{
     text-align: right;
     color: #ffffff;
-    font-size: 36px;
+    font-size: 26px;
     font-weight: 500;
     text-transform: uppercase;
     margin-bottom:10px;
@@ -346,4 +346,38 @@ a.loadMoreBtn span{
 a.loadMoreBtn::after{
     content: "Ver mais";
     padding: 15px;
+}
+
+/*---------- Glossario de Serviços ----------*/
+
+.glossario-servicos .vc_btn3.vc_btn3-color-juicy-pink, .glossario-servicos .vc_btn3.vc_btn3-color-juicy-pink.vc_btn3-style-flat{
+    background-color: transparent;
+    color: grey;
+}
+.glossario-servicos .vc_btn3.vc_btn3-color-juicy-pink:hover, .glossario-servicos .vc_btn3.vc_btn3-color-juicy-pink.vc_btn3-style-flat:hover{
+    background-color: transparent;
+    color: black;
+}
+.glossario-servicos p, .glossario-servicos span{
+    font-size: 14px;
+    line-height: 20px;
+}
+.glossario-servicos .vc_btn3-container.vc_btn3-left{
+    text-align: right;
+}
+.glossario-servicos .vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink{
+    padding:0px 0px 0px 0px;
+    visibility: hidden;
+}
+.glossario-servicos .vc_gitem-link.vc_general.vc_btn3.vc_btn3-size-md.vc_btn3-shape-rounded.vc_btn3-style-flat.vc_btn3-color-juicy-pink:after{
+    padding:0px 0px 0px 0px;
+    visibility: visible;
+    content: "LER MAIS";
+}
+.glossario-servicos .vc_btn3-container{
+    margin-bottom:0px;
+}
+
+.glossario-servicos .vc_col-sm-12.vc_gitem-col.vc_gitem-col-align-{
+    padding:5px 10px 10px 10px;
 }
