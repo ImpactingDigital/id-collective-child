@@ -309,7 +309,7 @@ footer .stoned-container{
     right:0;
 }
 
-.single-post .post-featured-image{
+.single-blog-post-media .post-featured-image{
     height:auto;
     max-height: 400px;
     overflow: hidden;
