@@ -309,7 +309,11 @@ footer .stoned-container{
     right:0;
 }
 
-
+.post-featured-image{
+    height:auto;
+    max-height: 400px;
+    overflow: hidden;
+}
 /*---------- Slider de servicos ----------*/
 
 .container-servicos .royal-slider-container nav.style-1 div{
