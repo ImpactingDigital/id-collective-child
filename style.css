@@ -393,13 +393,9 @@ a.loadMoreBtn::after{
 }}
 @media screen and (min-width: 767px) and (max-width: 991px){
 .pageable-servicos .vc_tta-panels{
-    height: 400px;
+    height: 350px;
 }}
-@media screen and (min-width: 320px) and (max-width: 767px){
+@media screen and (min-width: 0px) and (max-width: 767px){
 .pageable-servicos .vc_tta-panels{
-    height: 810px;
-}}
-@media screen and (min-width: 0px) and (max-width: 320px){
-.pageable-servicos .vc_tta-panels{
-    height: 810px;
+    height: 805px;
 }}
