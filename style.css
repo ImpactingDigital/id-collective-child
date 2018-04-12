@@ -387,11 +387,19 @@ a.loadMoreBtn::after{
 .pageable-servicos .vc_tta-panels{
     height: 275px;
 }}
-@media screen and (min-width: 320px) and (max-width: 1200px){
+@media screen and (min-width: 991px) and (max-width: 1200px){
+.pageable-servicos .vc_tta-panels{
+    height: 300px;
+}}
+@media screen and (min-width: 767px) and (max-width: 991px){
+.pageable-servicos .vc_tta-panels{
+    height: 400px;
+}}
+@media screen and (min-width: 320px) and (max-width: 767px){
 .pageable-servicos .vc_tta-panels{
     height: 810px;
 }}
-@media screen and (max-width: 320px){
+@media screen and (min-width: 0px) and (max-width: 320px){
 .pageable-servicos .vc_tta-panels{
     height: 810px;
 }}
