@@ -387,3 +387,8 @@ a.loadMoreBtn::after{
 .pageable-servicos .vc_tta-panels{
     height: 275px;
 }
+@media screen and (min-width: 0px) and (max-width: 400px){
+.pageable-servicos .vc_tta-panels{
+    height: 810px;
+}
+}
