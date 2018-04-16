@@ -162,9 +162,10 @@
 					<?php  wp_link_pages();?>	
 					<?php  wp_reset_postdata();?>
                 
-                <!-- BEGIN: CTA automático  ao final dos artigos -->
-                    <div class="button">TESTE CTA</div>
-                <!-- END: CTA automático  ao final dos artigos -->
+            <!-- BEGIN: CTA automático  ao final dos artigos -->
+            <?php echo do_shortcode('[display-posts id="11868" post_type="page" include_title="false" include_content="true" wrapper="div"]'); ?>
+            <!-- END: CTA automático  ao final dos artigos -->
+            
 			</div>
 			<?php comments_template(); ?>
 		</div>
