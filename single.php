@@ -161,6 +161,10 @@
 					<?php  the_content();?>
 					<?php  wp_link_pages();?>	
 					<?php  wp_reset_postdata();?>
+                
+                <!-- BEGIN: CTA automático  ao final dos artigos -->
+                    <div class="button">TESTE CTA</div>
+                <!-- END: CTA automático  ao final dos artigos -->
 			</div>
 			<?php comments_template(); ?>
 		</div>
