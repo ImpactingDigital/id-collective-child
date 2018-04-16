@@ -323,8 +323,8 @@ footer .stoned-container{
     margin-left: 0%;
 }
 .container-servicos .slider-servicos{
-    padding-left: 200px;
-    padding-right: 200px;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 #sol-neg-servicos .vertical-center2-content{
     vertical-align: top;
@@ -377,7 +377,35 @@ a.loadMoreBtn::after{
 .glossario-servicos .vc_btn3-container{
     margin-bottom:0px;
 }
-
 .glossario-servicos .vc_col-sm-12.vc_gitem-col.vc_gitem-col-align-{
-    padding:5px 10px 10px 10px;
+    padding:15px 20px 20px 20px;
 }
+.glossario-servicos .vc_custom_1419328663991{
+    background-color:#ededed !important;
+}
+/*
+@media screen and (min-width: 1200px){
+.pageable-servicos .vc_tta-panels{
+    height: 275px;
+}}
+@media screen and (min-width: 991px) and (max-width: 1200px){
+.pageable-servicos .vc_tta-panels{
+    height: 300px;
+}}
+@media screen and (min-width: 767px) and (max-width: 991px){
+.pageable-servicos .vc_tta-panels{
+    height: 350px;
+}}
+@media screen and (min-width: 414px) and (max-width: 767px){
+.pageable-servicos .vc_tta-panels{
+    height: 750px;
+}}
+@media screen and (min-width: 320px) and (max-width: 414px){
+.pageable-servicos .vc_tta-panels{
+    height: 800px;
+}}
+@media screen and (min-width: 0px) and (max-width: 320px){
+.pageable-servicos .vc_tta-panels{
+    height: 805px;
+}}
+*/
