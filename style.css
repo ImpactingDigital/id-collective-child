@@ -315,16 +315,6 @@ footer .stoned-container{
     overflow: hidden;    
 }
 
-.single-blog-content a img{
-    border-bottom: 0px solid transparent;
-    padding: 0 3px 0px;
-    text-decoration: none;
-}
-
-.single-blog-content a img:hover {
-    background: transparent;
-    transition: all 0.3s ease-in;
-}
 /*---------- Slider de servicos ----------*/
 
 .container-servicos .royal-slider-container nav.style-1 div{
