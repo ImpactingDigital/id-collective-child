@@ -172,6 +172,17 @@ div.about-me-content {
     transition: all 0.3s ease-in;
 }
 
+.single-blog-content a img{
+    border-bottom: 0px solid transparent;
+    padding: 0 3px 0px;
+    text-decoration: none;
+}
+
+.single-blog-content a img:hover {
+    background: transparent;
+    transition: all 0.3s ease-in;
+}
+
 .blog-item .overlay {
     background: rgba(0, 0, 0, 0.30);
 }
